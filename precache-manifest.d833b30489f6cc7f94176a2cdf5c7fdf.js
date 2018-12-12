@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/treebank-template/static/css/1.af6459e0.chunk.css"
   },
   {
-    "revision": "3fd2acdcd1b914ddd698ee600d8d0868",
+    "revision": "f4d83f026ca70553303452956ba2b329",
     "url": "/treebank-template/index.html"
   }
 ];
