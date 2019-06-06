@@ -1,15 +1,17 @@
 {
-  "main.css": "/treebank-template/static/css/main.d48e1ce6.chunk.css",
-  "main.js": "/treebank-template/static/js/main.2b61a7e8.chunk.js",
-  "main.js.map": "/treebank-template/static/js/main.2b61a7e8.chunk.js.map",
-  "static/css/1.aa606d8d.chunk.css": "/treebank-template/static/css/1.aa606d8d.chunk.css",
-  "static/js/1.a92185d9.chunk.js": "/treebank-template/static/js/1.a92185d9.chunk.js",
-  "static/js/1.a92185d9.chunk.js.map": "/treebank-template/static/js/1.a92185d9.chunk.js.map",
-  "runtime~main.js": "/treebank-template/static/js/runtime~main.0cc558e1.js",
-  "runtime~main.js.map": "/treebank-template/static/js/runtime~main.0cc558e1.js.map",
-  "static/css/1.aa606d8d.chunk.css.map": "/treebank-template/static/css/1.aa606d8d.chunk.css.map",
-  "static/css/main.d48e1ce6.chunk.css.map": "/treebank-template/static/css/main.d48e1ce6.chunk.css.map",
-  "index.html": "/treebank-template/index.html",
-  "precache-manifest.4ae7e64fb000143d7e6cfeedaee90b38.js": "/treebank-template/precache-manifest.4ae7e64fb000143d7e6cfeedaee90b38.js",
-  "service-worker.js": "/treebank-template/service-worker.js"
+  "files": {
+    "main.css": "/treebank-template/static/css/main.a730fb68.chunk.css",
+    "main.js": "/treebank-template/static/js/main.c23bc304.chunk.js",
+    "main.js.map": "/treebank-template/static/js/main.c23bc304.chunk.js.map",
+    "runtime~main.js": "/treebank-template/static/js/runtime~main.34f28866.js",
+    "runtime~main.js.map": "/treebank-template/static/js/runtime~main.34f28866.js.map",
+    "static/css/2.ec3f0427.chunk.css": "/treebank-template/static/css/2.ec3f0427.chunk.css",
+    "static/js/2.21d3e77f.chunk.js": "/treebank-template/static/js/2.21d3e77f.chunk.js",
+    "static/js/2.21d3e77f.chunk.js.map": "/treebank-template/static/js/2.21d3e77f.chunk.js.map",
+    "index.html": "/treebank-template/index.html",
+    "precache-manifest.23534b69e7c7d9ee5cca1190d60339d8.js": "/treebank-template/precache-manifest.23534b69e7c7d9ee5cca1190d60339d8.js",
+    "service-worker.js": "/treebank-template/service-worker.js",
+    "static/css/2.ec3f0427.chunk.css.map": "/treebank-template/static/css/2.ec3f0427.chunk.css.map",
+    "static/css/main.a730fb68.chunk.css.map": "/treebank-template/static/css/main.a730fb68.chunk.css.map"
+  }
 }
