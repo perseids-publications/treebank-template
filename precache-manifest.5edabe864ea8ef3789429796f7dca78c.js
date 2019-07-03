@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc31c6802803e4be8c0450d891d59e65",
+    "revision": "3c16d931924b8415a609674df284cde1",
     "url": "/treebank-template/index.html"
   },
   {
-    "revision": "103b57c1f0b92d4e4571",
+    "revision": "0590dd2ae4232aa7f7e8",
     "url": "/treebank-template/static/css/2.ec3f0427.chunk.css"
   },
   {
-    "revision": "9dfb0379858f2a0d48fc",
+    "revision": "a109e07611c3bd2b1619",
     "url": "/treebank-template/static/css/main.a730fb68.chunk.css"
   },
   {
-    "revision": "103b57c1f0b92d4e4571",
-    "url": "/treebank-template/static/js/2.79cf1bd4.chunk.js"
+    "revision": "0590dd2ae4232aa7f7e8",
+    "url": "/treebank-template/static/js/2.6403faba.chunk.js"
   },
   {
-    "revision": "9dfb0379858f2a0d48fc",
-    "url": "/treebank-template/static/js/main.64897c97.chunk.js"
+    "revision": "a109e07611c3bd2b1619",
+    "url": "/treebank-template/static/js/main.966ba814.chunk.js"
   },
   {
     "revision": "50fcfcce07a2ef801b31",
