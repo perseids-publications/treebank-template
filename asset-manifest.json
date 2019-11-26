@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/treebank-template/static/css/main.a730fb68.chunk.css",
-    "main.js": "/treebank-template/static/js/main.96f61573.chunk.js",
-    "main.js.map": "/treebank-template/static/js/main.96f61573.chunk.js.map",
-    "runtime~main.js": "/treebank-template/static/js/runtime~main.d5e3f3a8.js",
-    "runtime~main.js.map": "/treebank-template/static/js/runtime~main.d5e3f3a8.js.map",
-    "static/css/2.be8e0034.chunk.css": "/treebank-template/static/css/2.be8e0034.chunk.css",
-    "static/js/2.324bcd94.chunk.js": "/treebank-template/static/js/2.324bcd94.chunk.js",
-    "static/js/2.324bcd94.chunk.js.map": "/treebank-template/static/js/2.324bcd94.chunk.js.map",
+    "main.css": "/treebank-template/static/css/main.320015cc.chunk.css",
+    "main.js": "/treebank-template/static/js/main.e002c3c6.chunk.js",
+    "main.js.map": "/treebank-template/static/js/main.e002c3c6.chunk.js.map",
+    "runtime-main.js": "/treebank-template/static/js/runtime-main.171a5822.js",
+    "runtime-main.js.map": "/treebank-template/static/js/runtime-main.171a5822.js.map",
+    "static/css/2.4cb6dc17.chunk.css": "/treebank-template/static/css/2.4cb6dc17.chunk.css",
+    "static/js/2.98994d70.chunk.js": "/treebank-template/static/js/2.98994d70.chunk.js",
+    "static/js/2.98994d70.chunk.js.map": "/treebank-template/static/js/2.98994d70.chunk.js.map",
     "index.html": "/treebank-template/index.html",
-    "precache-manifest.5c08d1e7d49faa7273d38f31738dc244.js": "/treebank-template/precache-manifest.5c08d1e7d49faa7273d38f31738dc244.js",
+    "precache-manifest.dd13cbe0f2153124a1c1cece6bdedcf9.js": "/treebank-template/precache-manifest.dd13cbe0f2153124a1c1cece6bdedcf9.js",
     "service-worker.js": "/treebank-template/service-worker.js",
-    "static/css/2.be8e0034.chunk.css.map": "/treebank-template/static/css/2.be8e0034.chunk.css.map",
-    "static/css/main.a730fb68.chunk.css.map": "/treebank-template/static/css/main.a730fb68.chunk.css.map"
-  }
+    "static/css/2.4cb6dc17.chunk.css.map": "/treebank-template/static/css/2.4cb6dc17.chunk.css.map",
+    "static/css/main.320015cc.chunk.css.map": "/treebank-template/static/css/main.320015cc.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.171a5822.js",
+    "static/css/2.4cb6dc17.chunk.css",
+    "static/js/2.98994d70.chunk.js",
+    "static/css/main.320015cc.chunk.css",
+    "static/js/main.e002c3c6.chunk.js"
+  ]
 }
