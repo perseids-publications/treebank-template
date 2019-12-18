@@ -10,7 +10,26 @@ class EmbeddedPublication extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      subDoc: '',
+    };
+
     this.arethusa = new ArethusaWrapper();
+    this.arethusaSubDocFun = this.arethusaSubDocFun.bind(this);
+  }
+
+  componentDidMount() {
+    // eslint-disable-next-line no-undef
+    window.arethusaSubDocFun = this.arethusaSubDocFun;
+  }
+
+  componentWillUnmount() {
+    // eslint-disable-next-line no-undef
+    window.arethusaSubDocFun = undefined;
+  }
+
+  arethusaSubDocFun(subDoc) {
+    this.setState({ subDoc });
   }
 
   render() {
