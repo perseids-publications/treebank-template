@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/treebank-template/static/css/main.c6a36044.chunk.css",
-    "main.js": "/treebank-template/static/js/main.d91a6a6e.chunk.js",
-    "main.js.map": "/treebank-template/static/js/main.d91a6a6e.chunk.js.map",
+    "main.css": "/treebank-template/static/css/main.bd98509e.chunk.css",
+    "main.js": "/treebank-template/static/js/main.a496a7b9.chunk.js",
+    "main.js.map": "/treebank-template/static/js/main.a496a7b9.chunk.js.map",
     "runtime-main.js": "/treebank-template/static/js/runtime-main.a8b99599.js",
     "runtime-main.js.map": "/treebank-template/static/js/runtime-main.a8b99599.js.map",
     "static/css/2.8dbc3e9b.chunk.css": "/treebank-template/static/css/2.8dbc3e9b.chunk.css",
     "static/js/2.294bf737.chunk.js": "/treebank-template/static/js/2.294bf737.chunk.js",
     "static/js/2.294bf737.chunk.js.map": "/treebank-template/static/js/2.294bf737.chunk.js.map",
     "index.html": "/treebank-template/index.html",
-    "precache-manifest.3ced24582e5fd8bb221b5a13caaad0c7.js": "/treebank-template/precache-manifest.3ced24582e5fd8bb221b5a13caaad0c7.js",
+    "precache-manifest.c6748155bb38d694269d42020e743b17.js": "/treebank-template/precache-manifest.c6748155bb38d694269d42020e743b17.js",
     "service-worker.js": "/treebank-template/service-worker.js",
     "static/css/2.8dbc3e9b.chunk.css.map": "/treebank-template/static/css/2.8dbc3e9b.chunk.css.map",
-    "static/css/main.c6a36044.chunk.css.map": "/treebank-template/static/css/main.c6a36044.chunk.css.map",
+    "static/css/main.bd98509e.chunk.css.map": "/treebank-template/static/css/main.bd98509e.chunk.css.map",
     "static/js/2.294bf737.chunk.js.LICENSE": "/treebank-template/static/js/2.294bf737.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.a8b99599.js",
     "static/css/2.8dbc3e9b.chunk.css",
     "static/js/2.294bf737.chunk.js",
-    "static/css/main.c6a36044.chunk.css",
-    "static/js/main.d91a6a6e.chunk.js"
+    "static/css/main.bd98509e.chunk.css",
+    "static/js/main.a496a7b9.chunk.js"
   ]
 }
