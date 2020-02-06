@@ -20,6 +20,7 @@ const getConfig = (config) => {
 class ArethusaWrapper {
   constructor() {
     this.render = this.render.bind(this);
+    this.getWidget = this.getWidget.bind(this);
   }
 
   render(doc, chunk, { config, w }) {
@@ -43,6 +44,13 @@ class ArethusaWrapper {
 
     this.doc = doc;
     this.chunk = chunk;
+  }
+ 
+  getWidget() {
+   // eslint-disable-next-line no-undef
+   if (this.widget) {
+      return this.widget
+   }
   }
 }
 

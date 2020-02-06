@@ -464,6 +464,11 @@ angular.module('arethusa.core').directive('arethusaNavbar', [
         scope.showNavigation = function () {
           return conf.navigation;
         };
+
+        // Foundation's topbar doesn't seem to work properly - could be an issue
+        // with angular. If we make it fixed, it overlaps our body and no padding
+        // is added. We do it manually through this directive.
+        angular.element(document.body).css({ padding: '45px'});
       },
       template: '<div ng-if="!disable" ng-include="template"></div>'
     };
@@ -1224,11 +1229,12 @@ angular.module('arethusa.core').directive('fullHeight', [
         var body = angular.element(document.body);
         var border = angular.element(document.getElementById('canvas-border')).height();
         var margin = element.css("margin-bottom").replace('px', '');
+        var padding = element.css("padding-bottom").replace('px', '');
         var additionalBorder = attrs.fullHeight || 0;
 
         function resize(args) {
           var fullHeight = body.height();
-          element.height(fullHeight - margin - additionalBorder);
+          element.height(fullHeight - margin - padding - additionalBorder);
         }
         win.bind('resize', function() {
           resize();
@@ -1406,7 +1412,7 @@ angular.module('arethusa.core').directive('helpPanel', [
           });
         });
       },
-      templateUrl: 'js/arethusa.core/templates/help_panel.html'
+      templateUrl: 'js/arethusa.core/templates/help_panel_widget.html'
     };
   }
 ]);
@@ -1466,13 +1472,8 @@ angular.module('arethusa.core').directive('helpTrigger', [
     return generator.panelTrigger({
       service: help,
       trsl: translator,
-      trslKey: 'help',
-      template: '<i class="fa fa-question"/>',
-      kC: keyCapture,
-      mapping: {
-        name: 'help',
-        key: 'H'
-      }
+      trslKey: 'credits',
+      template: '<i class="fa" translate="credits"></i>'
     });
   }
 ]);
@@ -5559,7 +5560,7 @@ angular.module('arethusa.core').service('configurator', [
     };
 
     function getGlobalDefaults() {
-      var globalDefaults = { 'mode' : 'editor' };
+      var globalDefaults = { 'mode' : 'viewer' };
       var customDefaults = getGlobalCustomDefaults();
       var routeDefaults  = getGlobalDefaultsFromRoute();
       return angular.extend({}, globalDefaults, customDefaults, routeDefaults);
@@ -7228,10 +7229,12 @@ angular.module('arethusa.core').service('navigator', [
       var sec = citeSplit[1];
       citation = citationCache.get(doc);
       if (! citation) {
-        citeMapper.get({ cite: doc}).then(function(res) {
+        citeMapper.get({ cite: doc }).then(function(res) {
           citation = res.data;
           citationCache.put(doc, citation);
           callback(citationToString(citation, sec));
+        }).catch(function() {
+          callback(cite);
         });
       } else {
         callback(citationToString(citation, sec));
@@ -9928,6 +9931,77 @@ angular.module('arethusa.core').run(['$templateCache', function($templateCache) 
   );
 
 
+  $templateCache.put('js/arethusa.core/templates/help_panel_widget.html',
+    "<div ng-if=\"active\" class=\"fade small-12-columns\">\n" +
+    "  <div class=\"small-12 large-12 columns\">\n" +
+    "    <div help-panel-item toggler=\"editors\" heading=\"editors.title\" height=\"200px\">\n" +
+    "      <div editors/>\n" +
+    "    </div>\n" +
+    "    <div help-panel-item toggler=\"colors\" heading=\"helpPanel.colorLegends\" height=\"400px\">\n" +
+    "      <ul class=\"no-list\" ng-repeat=\"(name, values) in gS.colorMaps()\">\n" +
+    "        <li\n" +
+    "          ng-class=\"{ 'active-colorizer': name === gS.colorizer }\">\n" +
+    "          {{ name }}\n" +
+    "        </li>\n" +
+    "        <ul class=\"no-list\" ng-repeat=\"map in values.maps\">\n" +
+    "          <li>\n" +
+    "            {{ map.label }}\n" +
+    "            <table class=\"small\">\n" +
+    "              <tr>\n" +
+    "                <th ng-repeat=\"header in values.header\">\n" +
+    "                  <strong>{{ header }}</strong>\n" +
+    "                </th>\n" +
+    "              </tr>\n" +
+    "              <tr ng-repeat=\"(k, col) in map.colors\">\n" +
+    "                <td\n" +
+    "                  ng-style=\"col\"\n" +
+    "                  ng-repeat=\"val in k.split(' || ') track by $index\">\n" +
+    "                  {{ val }}\n" +
+    "                </td>\n" +
+    "              </tr>\n" +
+    "            </table>\n" +
+    "          </li>\n" +
+    "        </ul>\n" +
+    "      </ul>\n" +
+    "    </div>\n" +
+    "    <div help-panel-item toggler=\"about\" heading=\"helpPanel.about\" height=\"160px\">\n" +
+    "      <ul class=\"no-list\">\n" +
+    "        <li>\n" +
+    "          <table class=\"small\">\n" +
+    "            <tr>\n" +
+    "              <td translate=\"helpPanel.revision\"/>\n" +
+    "              <td>\n" +
+    "                <a ng-href=\"{{ vers.commitUrl }}\" target=\"_blank\">\n" +
+    "                  {{ vers.revision }}\n" +
+    "                </a>\n" +
+    "              </td>\n" +
+    "            <tr>\n" +
+    "            <tr>\n" +
+    "              <!--This is untranslated on purpose!-->\n" +
+    "              <td>Branch</td>\n" +
+    "              <td>\n" +
+    "                <a ng-href=\"{{ vers.branchUrl }}\" target=\"_blank\">\n" +
+    "                  {{ vers.branch }}\n" +
+    "                </a>\n" +
+    "              </td>\n" +
+    "            <tr>\n" +
+    "            <tr>\n" +
+    "              <td translate=\"date\"/>\n" +
+    "              <td>{{ vers.date | date: 'medium' }}</td>\n" +
+    "            </tr>\n" +
+    "            <tr>\n" +
+    "              <td translate=\"relocateHandler.title\"/>\n" +
+    "              <td relocate/>\n" +
+    "            </tr>\n" +
+    "          </table>\n" +
+    "        </li>\n" +
+    "      </ul>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n"
+  );
+
+
   $templateCache.put('js/arethusa.core/templates/keys_to_screen.html',
     "<div id=\"keys-to-screen\">\n" +
     "  <span\n" +
@@ -9957,49 +10031,18 @@ angular.module('arethusa.core').run(['$templateCache', function($templateCache) 
 
 
   $templateCache.put('js/arethusa.core/templates/navbar_buttons.html',
-    "<li><a class=\"button\" saver/></li>\n" +
-    "<li><a class=\"button\" outputter/></li>\n" +
-    "<li><a class=\"button\" hist-undo/></li>\n" +
-    "<li><a class=\"button\" hist-redo/></li>\n" +
-    "<li><a class=\"button\" sidepanel-folder/></li>\n" +
-    "<li><a class=\"button\" uservoice-trigger/></li>\n" +
-    "<li><a class=\"button\" global-settings-trigger/></li>\n" +
     "<li><a class=\"button\" help-trigger/></li>\n" +
-    "<li><a class=\"button\" translate-language/></li>\n" +
-    "<li><a class=\"button\" exit/></li>\n" +
     "\n"
   );
 
 
   $templateCache.put('js/arethusa.core/templates/navbar_buttons_collapsed.html',
-    "<li><a class=\"button\" saver/></li>\n" +
-    "<li><a class=\"button\" hist-undo/></li>\n" +
-    "<li><a class=\"button\" hist-redo/></li>\n" +
-    "<li>\n" +
-    "  <a\n" +
-    "    class=\"button\"\n" +
-    "    title=\"{{ menuTitle }}\"\n" +
-    "    dropdown-toggle=\"#navbar_collapsed_buttons_menu\">\n" +
-    "    <i class=\"fi-align-justify\"></i>\n" +
-    "  </a>\n" +
-    "  <ul id=\"navbar_collapsed_buttons_menu\" class=\"navbar-dropdown\">\n" +
-    "    <li><a outputter/></li>\n" +
-    "    <li><a sidepanel-folder/></li>\n" +
-    "    <li><a uservoice-trigger/></li>\n" +
-    "    <li><a help-trigger/></li>\n" +
-    "    <li><a global-settings-trigger/></li>\n" +
-    "    <li><a translate-language/></li>\n" +
-    "    <li><a exit/></li>\n" +
-    "  </ul>\n" +
-    "</li>\n"
+    "<li><a help-trigger/></li>\n"
   );
 
 
   $templateCache.put('js/arethusa.core/templates/navbar_navigation.html',
     "<ul ng-show=\"showNavigation()\" class=\"navbar-navigation\">\n" +
-    "  <li>\n" +
-    "    <a>{{ navStat.citation }}</a>\n" +
-    "  </li>\n" +
     "  <!--The wrapping divs around the a elements are only there for styling - the-->\n" +
     "  <!--foundation topbar gives them a differnet look and feel when they are wrapped.-->\n" +
     "  <li>\n" +

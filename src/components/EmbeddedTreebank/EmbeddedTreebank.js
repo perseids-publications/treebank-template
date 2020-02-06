@@ -7,6 +7,7 @@ import { publicationMatchType, locationType } from '../../lib/types';
 import styles from './EmbeddedTreebank.module.css';
 
 import ArethusaWrapper from '../ArethusaWrapper';
+import TreebankService from '../TreebankService';
 
 class EmbeddedTreebank extends Component {
   constructor(props) {
@@ -38,10 +39,12 @@ class EmbeddedTreebank extends Component {
       xml,
       match: { params: { chunk } },
       arethusa: { render },
+      treebankService: { activate }
     } = this.props;
     const additionalArgs = this.additionalArgs();
 
     render(xml, chunk, additionalArgs);
+    activate();
   }
 
   render() {
@@ -65,6 +68,7 @@ class EmbeddedTreebank extends Component {
 
 EmbeddedTreebank.propTypes = {
   arethusa: PropTypes.instanceOf(ArethusaWrapper).isRequired,
+  treebankService: PropTypes.instanceOf(TreebankService).isRequired,
   match: publicationMatchType.isRequired,
   location: locationType.isRequired,
   xml: PropTypes.string.isRequired,

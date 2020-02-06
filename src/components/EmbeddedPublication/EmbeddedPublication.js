@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { publicationMatchType, locationType } from '../../lib/types';
 
 import ArethusaWrapper from '../ArethusaWrapper';
+import TreebankService from '../TreebankService';
 import EmbeddedTreebank from '../EmbeddedTreebank';
 
 class EmbeddedPublication extends Component {
@@ -11,6 +12,7 @@ class EmbeddedPublication extends Component {
     super(props);
 
     this.arethusa = new ArethusaWrapper();
+    this.treebankService = new TreebankService(this.arethusa);
   }
 
   render() {
@@ -27,6 +29,7 @@ class EmbeddedPublication extends Component {
           location={location}
           match={match}
           arethusa={this.arethusa}
+          treebankService={this.treebankService}
         />
       </div>
     );

@@ -1689,6 +1689,10 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+"alpheios-messaging@http://github.com/alpheios-project/alpheios-messaging":
+  version "1.0.0"
+  resolved "http://github.com/alpheios-project/alpheios-messaging#fdda6dc7110d155833a429cfdd1063b867e7b1cd"
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
