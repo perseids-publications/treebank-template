@@ -3094,7 +3094,8 @@ angular.module('arethusa.core').factory('apiOutputter', [
             entry.dict = { hdwd: { lang: lang, $: infl.lemma } }
           }
           if (angular.isDefined(infl.postag)) {
-            entry.infl = this._attributesToAlpheios(infl.attributes,morph)
+            entry.infl = this._attributesToAlpheios(infl.attributes,morph);
+            entry.infl.term = { form: { $: token.string } };
           }
           var glosses = []
           if (angular.isDefined(infl.gloss)) {
@@ -4944,6 +4945,7 @@ angular.module('arethusa.core').service('api', [
     }
 
     this.getMorph = function(sentenceId,wordId) {
+      /** TODO figure out how to be sure the api service is only instantiated after Arethusa is loaded **/
       if (!state.arethusaLoaded) {
         console.error("Api called before Arethusa was loaded")
       }

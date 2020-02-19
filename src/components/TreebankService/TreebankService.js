@@ -52,7 +52,7 @@ class TreebankService {
         responseFn(ResponseMessage.Error(request, new Error(`Missing required parameter(s): ${missingParams}`)))
       } else {
         Promise.resolve(api[requestName](...validParams)).then((result) => {
-          responseFn(ResponseMessage.Success(request, result.RDF))
+          responseFn(ResponseMessage.Success(request, result))
         }).catch((error) => { 
           responseFn(ResponseMessage.Error(request, error))
         })
