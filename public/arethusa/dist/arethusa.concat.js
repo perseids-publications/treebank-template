@@ -5253,6 +5253,11 @@ angular.module('arethusa.core').factory('Tree', [
         applyViewMode();
       });
 
+      navigator.onRefresh(function() {
+        render();
+        $timeout(applyViewMode, transitionDuration);
+      });
+
 
       // Keybindings for this directive
       function keyBindings(kC) {
@@ -5578,6 +5583,10 @@ angular.module('arethusa.core').service('api', [
       }
       return this.outputter.outputMorph(state.getToken(idHandler.getId(wordId,sentenceId)),lang(),morph());
     };
+
+    this.refreshView = function() {
+      navigator.triggerRefreshEvent();
+    }
 
     this.nextSentence = function() {
       navigator.nextChunk();
@@ -7996,6 +8005,7 @@ angular.module('arethusa.core').service('navigator', [
             keyCapture, $rootScope, globalSettings) {
 
     var MOVE_EVENT = 'navigator:move';
+    var REFRESH_EVENT = 'navigator:refresh';
     var self = this;
     var citeMapper;
     var context = {};
@@ -8312,6 +8322,18 @@ angular.module('arethusa.core').service('navigator', [
     }
     function triggerMoveEvent() {
       $rootScope.$broadcast(MOVE_EVENT);
+    }
+
+    this.onRefresh = onRefresh;
+
+    function onRefresh(cb) {
+      return $rootScope.$on(REFRESH_EVENT, cb);
+    }
+
+    this.triggerRefreshEvent = triggerRefreshEvent;
+    function triggerRefreshEvent() {
+      console.info("REFRESH TRIGGERED");
+      $rootScope.$broadcast(REFRESH_EVENT);
     }
 
     // Probably could deregister/reregister that watch, but it doesn't hurt...

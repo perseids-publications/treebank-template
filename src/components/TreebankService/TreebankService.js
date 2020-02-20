@@ -10,6 +10,7 @@ class TreebankService {
      */
     const supportedRequests = {
       getMorph: ['sentenceId','wordId'],
+      refreshView: [],
       nextSentence: [],
       prevSentence: [],
       gotoSentence: ['sentenceId']
@@ -34,7 +35,7 @@ class TreebankService {
         }
       }
       if (! requestName) {
-        responseFn(ResponseMessage.Error(request, new Error(`Unsupported request. Valid requests are ${supportedRequests}`)))
+        responseFn(ResponseMessage.Error(request, new Error(`Unsupported request. Valid requests are ${Object.keys.supportedRequests}`)))
         return
       }
       let widget = this.arethusa.getWidget()
