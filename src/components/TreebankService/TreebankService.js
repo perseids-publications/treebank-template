@@ -66,10 +66,8 @@ class TreebankService {
    * Activate the TreebankService
    */
   activate() {
-    document.addEventListener('DOMContentLoaded', () => {
-      const service = new MessagingService("treebank-service", new Destination(TreebankDestinationConfig))
-      service.registerReceiverCallback(TreebankDestinationConfig.name, this.messageHandler)
-    })
+    const service = new MessagingService("treebank-service", new Destination(TreebankDestinationConfig))
+    service.registerReceiverCallback(TreebankDestinationConfig.name, this.messageHandler)
   }
 }
 

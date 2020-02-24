@@ -47,7 +47,6 @@ class ArethusaWrapper {
   }
  
   getWidget() {
-   // eslint-disable-next-line no-undef
    if (this.widget) {
       return this.widget
    }
