@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7bb94d5849df3f5762b9091828838d70",
+    "revision": "9967b36bb436e6fe95a10193235b6e44",
     "url": "/treebank-template/index.html"
   },
   {
-    "revision": "019d5deee0ad01f0beef",
+    "revision": "d7cdb4e7475634d9ca5b",
     "url": "/treebank-template/static/css/2.8dbc3e9b.chunk.css"
   },
   {
-    "revision": "569e3dcde934ca4d09a3",
+    "revision": "cabd3389ee88893313f0",
     "url": "/treebank-template/static/css/main.bd98509e.chunk.css"
   },
   {
-    "revision": "019d5deee0ad01f0beef",
-    "url": "/treebank-template/static/js/2.2d1a6cc8.chunk.js"
+    "revision": "d7cdb4e7475634d9ca5b",
+    "url": "/treebank-template/static/js/2.0025510a.chunk.js"
   },
   {
     "revision": "61460a9918638f89da762dcefb150768",
-    "url": "/treebank-template/static/js/2.2d1a6cc8.chunk.js.LICENSE.txt"
+    "url": "/treebank-template/static/js/2.0025510a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "569e3dcde934ca4d09a3",
-    "url": "/treebank-template/static/js/main.5ba24e8c.chunk.js"
+    "revision": "cabd3389ee88893313f0",
+    "url": "/treebank-template/static/js/main.a6580896.chunk.js"
   },
   {
     "revision": "8485b917c4c7e120324a",
