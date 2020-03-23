@@ -66,8 +66,13 @@ class TreebankService {
    * Activate the TreebankService
    */
   activate() {
-    const service = new MessagingService("treebank-service", new Destination(TreebankDestinationConfig))
-    service.registerReceiverCallback(TreebankDestinationConfig.name, this.messageHandler)
+    const config = {
+      name: 'treebank',
+      targetIframeID: 'string-not-used',
+      targetURL: 'string-not-used',
+      commModes: [Destination.commModes.RECEIVE],
+    };
+    const service = new MessagingService('treebank-service', new Destination({ ...config, receiverCB: this.messageHandler }));
   }
 }
 
