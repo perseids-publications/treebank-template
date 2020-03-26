@@ -76,31 +76,28 @@ class Publication extends Component {
     };
 
     this.setSubdoc = this.setSubdoc.bind(this);
+    this.setArethusaLoaded = this.setArethusaLoaded.bind(this);
 
     this.arethusa = new ArethusaWrapper();
   }
 
   componentDidMount() {
-    // eslint-disable-next-line no-undef
-    this.interval = window.setInterval(this.setSubdoc, 100);
+    document.body.addEventListener('ArethusaLoaded',this.setArethusaLoaded);
   }
 
   componentWillUnmount() {
-    // eslint-disable-next-line no-undef
-    window.clearInterval(this.interval);
+    document.body.removeEventListener('ArethusaLoaded');
   }
 
-  setSubdoc() {
-    try {
-      const subDoc = this.arethusa.getSubdoc();
+  setArethusaLoaded() {
+    document.body.removeEventListener('ArethusaLoaded');
+    this.setSubdoc();
+  }
 
-      this.setState({ subDoc });
-    } catch {
-      // When this `catch` block executes it means that Arethusa has not fully loaded.
-      // So we allow the timer to execute again.
-      // We don't unset the timer in the `try` block because sometimes Arethusa is partially
-      // loaded and returns `undefined`.
-    }
+
+  setSubdoc() {
+    const subDoc = this.arethusa.getSubdoc();
+    this.setState({ subDoc });
   }
 
   render() {

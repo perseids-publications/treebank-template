@@ -16,22 +16,33 @@ const config = {
   commModes: [Destination.commModes.RECEIVE],
 };
 
-const error = (request, message) => ResponseMessage.Error(request, new Error(message));
+const error = (request, message, code) => ResponseMessage.Error(request, new Error(message), code);
 
 class TreebankService extends Component {
   constructor(props) {
     super(props);
 
     this.state = { redirectTo: null };
+    this.arethusaLoaded = false;
     this.messageHandler = this.messageHandler.bind(this);
+    this.setArethusaLoaded = this.setArethusaLoaded.bind(this)
   }
 
   componentDidMount() {
+    document.body.addEventListener('ArethusaLoaded',this.setArethusaLoaded)
+    // eslint-disable-next-line no-undef
     this.service = new MessagingService('treebank-service', new Destination({ ...config, receiverCB: this.messageHandler }));
   }
 
   componentWillUnmount() {
     this.service.deregister();
+    // eslint-disable-next-line no-undef
+    document.body.removeEventListener('ArethusaLoaded');
+  }
+
+  setArethusaLoaded() {
+    this.arethusaLoaded = true;
+    window.clearInterval(this.interval);
   }
 
   messageHandler(request, responseFn) {
@@ -39,27 +50,31 @@ class TreebankService extends Component {
     const { body } = request;
     const [name] = Object.keys(body);
 
-    try {
-      switch (name) {
-        case 'gotoSentence':
-          this.setState({ redirectTo: body.gotoSentence.sentenceId });
+    if (this.arethusaLoaded) {
+      try {
+        switch (name) {
+          case 'gotoSentence':
+            this.setState({ redirectTo: body.gotoSentence.sentenceId });
 
-          responseFn(ResponseMessage.Success(request, { status: 'success' }));
-          break;
-        case 'getMorph':
-          responseFn(ResponseMessage.Success(
-            request,
-            arethusa.getMorph(body.getMorph.sentenceId, body.getMorph.wordId),
-          ));
-          break;
-        case 'refreshView':
-          responseFn(ResponseMessage.Success(request, arethusa.refreshView()));
-          break;
-        default:
-          responseFn(error(`Unsupported request: ${name}`));
+            responseFn(ResponseMessage.Success(request, { status: 'success' }));
+            break;
+          case 'getMorph':
+            responseFn(ResponseMessage.Success(
+              request,
+              arethusa.getMorph(body.getMorph.sentenceId, body.getMorph.wordId),
+            ));
+            break;
+          case 'refreshView':
+            responseFn(ResponseMessage.Success(request, arethusa.refreshView()));
+            break;
+          default:
+            responseFn(error(request,`Unsupported request: ${name}`,ResponseMessage.errorCodes.UNKNOWN_REQUEST));
+        }
+      } catch (err) {
+        responseFn(error(request, err, ResponseMessage.errorCodes.INTERNAL_ERROR));
       }
-    } catch (err) {
-      responseFn(ResponseMessage.Error(request, err));
+    } else {
+        responseFn(error(request, new Error('Arethusa is Not Loaded'), ResponseMessage.errorCodes.SERVICE_UNINITIALIZED));
     }
   }
 

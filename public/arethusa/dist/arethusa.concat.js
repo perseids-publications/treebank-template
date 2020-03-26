@@ -780,7 +780,7 @@ angular.module('arethusa.core').controller('ArethusaCtrl', [
         plugins.start(conf.plugins).then(function() {
           state.arethusaLoaded = true;
           notifier.success(translations.loadComplete());
-
+          angular.element(document.body)[0].dispatchEvent(new CustomEvent("ArethusaLoaded",{detail: { currentTokenCount: state.totalTokens } }));
           if (aU.isArethusaMainApplication()) {
             UserVoice.push(['addTrigger', '#uservoicebutton', { mode: 'contact' }]);
           }
@@ -5583,6 +5583,15 @@ angular.module('arethusa.core').service('api', [
       return lazyLang;
     }
 
+
+    /** 
+     * check ready state
+     * @return {Boolean} true if arethusa is loaded and ready otherwise false
+     */
+    this.isReady = function () {
+      return state.arethusaLoaded
+    };
+
     /**
      * get the morphology and gloss for a specific word
      * @param {String} sentenceId sentence (chunk) identifier
@@ -5592,10 +5601,6 @@ angular.module('arethusa.core').service('api', [
      *                  (i.e. the same format as parsed by the BSPMorphRetriever)
      */
     this.getMorph = function(sentenceId,wordId) {
-      /** TODO figure out how to be sure the api service is only instantiated after Arethusa is loaded **/
-      if (!state.arethusaLoaded) {
-        console.error("Api called before Arethusa was loaded")
-      }
       return this.outputter.outputMorph(state.getToken(idHandler.getId(wordId,sentenceId)),lang(),morph());
     };
 
@@ -13149,10 +13154,10 @@ angular.module('arethusa').service('retrieverHelper', [
 'use strict';
 
 angular.module('arethusa').constant('VERSION', {
-  revision: '6e816c7cdf1e70df605ff74394a5b1833a61aa40',
-  branch: 'widget-api',
+  revision: '8616fe9f2e46db7dfad2a6c5d5fc54d3e6beb1a4',
+  branch: 'gardener_widget',
   version: '0.2.5',
-  date: '2020-03-11T17:00:57.844Z',
+  date: '2019-11-07T14:49:48.311Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
