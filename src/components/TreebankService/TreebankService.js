@@ -29,7 +29,8 @@ class TreebankService extends Component {
   }
 
   componentDidMount() {
-    document.body.addEventListener('ArethusaLoaded',this.setArethusaLoaded)
+    // eslint-disable-next-line no-undef 
+    window.document.body.addEventListener('ArethusaLoaded',this.setArethusaLoaded)
     // eslint-disable-next-line no-undef
     this.service = new MessagingService('treebank-service', new Destination({ ...config, receiverCB: this.messageHandler }));
   }
@@ -37,7 +38,7 @@ class TreebankService extends Component {
   componentWillUnmount() {
     this.service.deregister();
     // eslint-disable-next-line no-undef
-    document.body.removeEventListener('ArethusaLoaded');
+    window.document.body.removeEventListener('ArethusaLoaded',this.setArethusaLoaded);
   }
 
   setArethusaLoaded() {

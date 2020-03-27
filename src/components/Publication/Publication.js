@@ -82,11 +82,13 @@ class Publication extends Component {
   }
 
   componentDidMount() {
-    document.body.addEventListener('ArethusaLoaded',this.setArethusaLoaded);
+    // eslint-disable-next-line no-undef
+    window.document.body.addEventListener('ArethusaLoaded',this.setArethusaLoaded);
   }
 
   componentWillUnmount() {
-    document.body.removeEventListener('ArethusaLoaded');
+    // eslint-disable-next-line no-undef
+    window.document.body.removeEventListener('ArethusaLoaded', this.setArethusaLoaded);
   }
 
   setArethusaLoaded() {
