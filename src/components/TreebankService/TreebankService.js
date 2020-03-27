@@ -75,7 +75,7 @@ class TreebankService extends Component {
         responseFn(error(request, err, ResponseMessage.errorCodes.INTERNAL_ERROR));
       }
     } else {
-        responseFn(error(request, new Error('Arethusa is Not Loaded'), ResponseMessage.errorCodes.SERVICE_UNINITIALIZED));
+        responseFn(error(request, 'Arethusa is Not Loaded', ResponseMessage.errorCodes.SERVICE_UNINITIALIZED));
     }
   }
 
