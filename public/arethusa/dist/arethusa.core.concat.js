@@ -1230,7 +1230,9 @@ angular.module('arethusa.core').directive('fullHeight', [
 
         function resize(args) {
           var fullHeight = body.height();
-          element.height(fullHeight - margin - padding - additionalBorder);
+          if (fullHeight > 0) {
+            element.height(fullHeight - margin - padding - additionalBorder);
+          }
         }
 
         resize();
