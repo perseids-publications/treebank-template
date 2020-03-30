@@ -1230,6 +1230,9 @@ angular.module('arethusa.core').directive('fullHeight', [
 
         function resize(args) {
           var fullHeight = body.height();
+          // if the body height comes up as 0 then we should just skip the resizing
+          // because this is probably an error and the display will end up getting truncated
+          // see issue #796
           if (fullHeight > 0) {
             element.height(fullHeight - margin - padding - additionalBorder);
           }
