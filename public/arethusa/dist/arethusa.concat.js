@@ -5588,6 +5588,12 @@ angular.module('arethusa.core').service('api', [
       return lazyLang;
     }
 
+    var lazySearch;
+    function search() {
+      if (!lazySearch) lazySearch = plugins.get('search');
+      return lazySearch;
+    }
+
 
     /** 
      * check ready state
@@ -5641,11 +5647,40 @@ angular.module('arethusa.core').service('api', [
 
     /**  
      * navigates application state to supplied sentenceId
+     * making the optional word id selected
      * @param {String} sentenceId 
+     * @param {String[]} wordIds (optional)
      */
-    this.gotoSentence = function(sentenceId) {
+    this.gotoSentence = function(sentenceId, wordIds) {
       navigator.goTo(sentenceId);
+      var tokenIds = [];
+      if (wordIds && wordIds.length > 0) {
+        arethusaUtil.inject(tokenIds, wordIds, function (memo, wordId) {
+         var id = idHandler.getId(wordId,sentenceId);
+         arethusaUtil.pushAll(memo, [id]);
+        });
+        state.multiSelect(tokenIds)
+      }
     };
+
+    /**
+     * find a word by the word string and the surrounding context
+     */
+    this.findWord = function(sentenceId, word, prefix, suffix) {
+      navigator.goTo(sentenceId);
+      if (prefix == null) {
+        prefix = '';
+      }  
+      if (suffix == null) {
+        suffix = '';
+      }
+      var ids = search().queryWordInContext(word,prefix,suffix);
+      var sourceIds = [];
+      angular.forEach(ids, function (id) {
+        sourceIds.push(state.getToken(id).idMap.mappings.treebank.sourceId);
+      });
+      return sourceIds;
+    }
 
   }
 ]);
@@ -9717,6 +9752,36 @@ angular.module('arethusa.core').service('state', [
       selectSurroundingToken('prev');
     };
 
+    this.getPreviousTokens = function(id,numTokens) {
+      var tokens = [];
+      var allIds = Object.keys(self.tokens);
+      var endIndex = allIds.indexOf(id) - 1;
+      if (endIndex >= 0) {
+        var startIndex = 0;
+        if (numTokens && startIndex !== endIndex) {
+          startIndex = startIndex + numTokens;
+        }
+        for (var i=startIndex; i<= endIndex; i++) {
+          tokens.push(self.getToken(allIds[i]));
+        }
+      }
+      return tokens;
+    };
+
+    this.getNextTokens = function(id,numTokens) {
+      var tokens = [];
+      var allIds = Object.keys(self.tokens);
+      var startIndex = allIds.indexOf(id) + 1;
+      var endIndex = allIds.length - 1;
+      if (numTokens && startIndex !== endIndex) {
+        endIndex = startIndex + numTokens;
+      }
+      for (var i=startIndex; i<= endIndex; i++) {
+        tokens.push(self.getToken(allIds[i]));
+      }
+      return tokens;
+    };
+
 // tokens stuff
     this.toTokenStrings = function(ids) {
       var nonSequentials = idHandler.nonSequentialIds(ids);
@@ -10086,7 +10151,7 @@ angular.module('arethusa.core').service('state', [
      * @param {*} [arg] Optional argument transmitted alongside the event
      */
     this.broadcast = function(event, arg) {
-       // broadcast here iterates through all 
+       // broadcast here iterates through all
        // handlers which have registered a listener
        // on the broadcasted event and executes them
        // before returning

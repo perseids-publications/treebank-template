@@ -32,11 +32,13 @@ class TreebankService extends Component {
     // eslint-disable-next-line no-undef 
     window.document.body.addEventListener('ArethusaLoaded',this.setArethusaLoaded)
     // eslint-disable-next-line no-undef
-    this.service = new MessagingService('treebank-service', new Destination({ ...config, receiverCB: this.messageHandler }));
+    this.destination = new Destination({ ...config, receiverCB: this.messageHandler });
+    this.service = new MessagingService('treebank-service', this.destination);
+
   }
 
   componentWillUnmount() {
-    this.service.deregister();
+    this.destination.deregister();
     // eslint-disable-next-line no-undef
     window.document.body.removeEventListener('ArethusaLoaded',this.setArethusaLoaded);
   }
@@ -55,7 +57,14 @@ class TreebankService extends Component {
       try {
         switch (name) {
           case 'gotoSentence':
-            this.setState({ redirectTo: body.gotoSentence.sentenceId });
+            let route = body.gotoSentence.sentenceId
+            if (body.gotoSentence.wordIds) {
+              route = `${route}?`;
+              for (let w of body.gotoSentence.wordIds) {
+	        route = `${route}&w=${w}`;
+              }
+            }
+            this.setState({ redirectTo: route });
 
             responseFn(ResponseMessage.Success(request, { status: 'success' }));
             break;
@@ -67,6 +76,10 @@ class TreebankService extends Component {
             break;
           case 'refreshView':
             responseFn(ResponseMessage.Success(request, arethusa.refreshView()));
+            break;
+          case 'findWord':
+            let args = body.findWord;
+            responseFn(ResponseMessage.Success(request, arethusa.findWord(args.sentenceId,args.word,args.prefix,args.suffix)));
             break;
           default:
             responseFn(error(request,`Unsupported request: ${name}`,ResponseMessage.errorCodes.UNKNOWN_REQUEST));

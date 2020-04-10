@@ -27,8 +27,8 @@ class ArethusaWrapper {
     const { Arethusa, $ } = window;
 
     if (this.widget) {
-      if (this.doc === doc && this.chunk !== chunk) {
-        this.gotoSentence(chunk);
+      if (this.doc === doc && (this.chunk !== chunk || this.word !== w)) {
+        this.gotoSentence(chunk,w);
         removeToastContainer($);
       }
     } else {
@@ -43,10 +43,11 @@ class ArethusaWrapper {
 
     this.doc = doc;
     this.chunk = chunk;
+    this.word = w
   }
 
-  gotoSentence(chunk) {
-    return this.widget.api().gotoSentence(chunk);
+  gotoSentence(chunk,words) {
+    return this.widget.api().gotoSentence(chunk,words);
   }
 
   getSubdoc() {
@@ -59,6 +60,11 @@ class ArethusaWrapper {
 
   refreshView() {
     return this.widget.api().refreshView();
+  }
+
+  findWord(sentenceId,word,prefix,suffix) {
+    console.info(`Find ${word} ${prefix} ${suffix}`);
+    return this.widget.api().findWord(sentenceId,word,prefix,suffix);
   }
 }
 
