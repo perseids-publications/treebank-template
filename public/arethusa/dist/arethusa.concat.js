@@ -5595,7 +5595,7 @@ angular.module('arethusa.core').service('api', [
     }
 
 
-    /** 
+    /**
      * check ready state
      * @return {Boolean} true if arethusa is loaded and ready otherwise false
      */
@@ -5607,8 +5607,8 @@ angular.module('arethusa.core').service('api', [
      * get the morphology and gloss for a specific word
      * @param {String} sentenceId sentence (chunk) identifier
      * @param {String} wordId word (token) identifier
-     * @return {Object} an object adhering to a JSON representation of Alpheios Lexicon Schema wrapped in 
-     *                  the BSP Morphology Service RDF Annotation Wrapper 
+     * @return {Object} an object adhering to a JSON representation of Alpheios Lexicon Schema wrapped in
+     *                  the BSP Morphology Service RDF Annotation Wrapper
      *                  (i.e. the same format as parsed by the BSPMorphRetriever)
      */
     this.getMorph = function(sentenceId,wordId) {
@@ -5623,7 +5623,7 @@ angular.module('arethusa.core').service('api', [
       return navigator.currentSubdocs()[0];
     };
 
-    /** 
+    /**
      * rerenders the tree
      * can be useful to call the tree is first loaded in a iframe that isn't visible
      */
@@ -5631,24 +5631,24 @@ angular.module('arethusa.core').service('api', [
       navigator.triggerRefreshEvent();
     }
 
-    /** 
+    /**
      * navigates application state to the next sentence
      */
     this.nextSentence = function() {
       navigator.nextChunk();
     };
 
-    /**  
+    /**
      * navigates application state to the previous sentence
      */
     this.prevSentence = function() {
       navigator.prevChunk();
     };
 
-    /**  
+    /**
      * navigates application state to supplied sentenceId
-     * making the optional word id selected
-     * @param {String} sentenceId 
+     * making the optional word id(s) selected
+     * @param {String} sentenceId
      * @param {String[]} wordIds (optional)
      */
     this.gotoSentence = function(sentenceId, wordIds) {
@@ -5664,13 +5664,20 @@ angular.module('arethusa.core').service('api', [
     };
 
     /**
-     * find a word by the word string and the surrounding context
+     * navigates the application to the supplied sentenceId
+     * and finds a word given a specific context.
+     * Found words are NOT preselected.
+     * @param {String} sentenceId
+     * @param {String} word the word to find
+     * @param {String} prefix the preceding word or words (optional)
+     * @param {String} suffix the following word or words (optional)
+     * @return {String[]} a list of the matching wordids
      */
     this.findWord = function(sentenceId, word, prefix, suffix) {
       navigator.goTo(sentenceId);
       if (prefix == null) {
         prefix = '';
-      }  
+      }
       if (suffix == null) {
         suffix = '';
       }
@@ -9752,14 +9759,29 @@ angular.module('arethusa.core').service('state', [
       selectSurroundingToken('prev');
     };
 
+    /*
+     * Gets a list of the tokens which precede the supplied tokens
+     * in the current chunk.
+     * @param {String} id the supplied token
+     * @param {int} numTokens {optional} number of preceding tokens
+     *                        to retrieve. If not supplied, it will
+     *                        retrieve all preceding tokens in the chunk.
+     * @return {Object[]} list of preceding token objects
+     */
     this.getPreviousTokens = function(id,numTokens) {
       var tokens = [];
       var allIds = Object.keys(self.tokens);
       var endIndex = allIds.indexOf(id) - 1;
       if (endIndex >= 0) {
+        // if the end index is not already the first token
+        // and numTokens is supplied, the start index should be
+        // endIndex - numTokens, with a floor of 0
         var startIndex = 0;
-        if (numTokens && startIndex !== endIndex) {
-          startIndex = startIndex + numTokens;
+        if (numTokens) {
+          startIndex = endIndex - numTokens + 1;
+        }
+        if (startIndex < 0) {
+           startIndex = 0;
         }
         for (var i=startIndex; i<= endIndex; i++) {
           tokens.push(self.getToken(allIds[i]));
@@ -9768,13 +9790,22 @@ angular.module('arethusa.core').service('state', [
       return tokens;
     };
 
+    /*
+     * Gets a list of the tokens which follow the supplied tokens
+     * in the current chunk.
+     * @param {String} id the supplied token
+     * @param {int} numTokens {optional} number of following tokens
+     *                        to retrieve. If not supplied, it will
+     *                        retrieve all following tokens in the chunk.
+     * @return {Object[]} list of following token objects
+     */
     this.getNextTokens = function(id,numTokens) {
       var tokens = [];
       var allIds = Object.keys(self.tokens);
       var startIndex = allIds.indexOf(id) + 1;
       var endIndex = allIds.length - 1;
-      if (numTokens && startIndex !== endIndex) {
-        endIndex = startIndex + numTokens;
+      if (numTokens && (startIndex + numTokens -1 < endIndex) ) {
+        endIndex = startIndex + numTokens - 1;
       }
       for (var i=startIndex; i<= endIndex; i++) {
         tokens.push(self.getToken(allIds[i]));
