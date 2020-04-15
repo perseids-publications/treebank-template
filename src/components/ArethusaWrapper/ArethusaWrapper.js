@@ -23,12 +23,23 @@ class ArethusaWrapper {
   }
 
   render(doc, chunk, { config, w }) {
+    let words = [];
+    if (w) {
+      words.push(...w);
+    }
     // eslint-disable-next-line no-undef
     const { Arethusa, $ } = window;
 
+    let wordsDiffer = (a,b) => {
+      let aList = a.sort().join(',');
+      let bList = b.sort().join(',');
+      return aList !== bList;
+    };
+
     if (this.widget) {
-      if (this.doc === doc && (this.chunk !== chunk || this.word !== w)) {
-        this.gotoSentence(chunk,w);
+      if (this.doc === doc && 
+          (this.chunk !== chunk || wordsDiffer(this.words,words))) {
+        this.gotoSentence(chunk,words);
         removeToastContainer($);
       }
     } else {
@@ -38,12 +49,12 @@ class ArethusaWrapper {
         .on(elementId)
         .from(remoteUrl)
         .with(getConfig(config))
-        .start({ doc, chunk, w });
+        .start({ doc, chunk, words });
     }
 
     this.doc = doc;
     this.chunk = chunk;
-    this.word = w
+    this.words = words;
   }
 
   gotoSentence(chunk,words) {
