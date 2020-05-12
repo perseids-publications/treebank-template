@@ -1003,10 +1003,10 @@ angular.module('arethusa').service('retrieverHelper', [
 'use strict';
 
 angular.module('arethusa').constant('VERSION', {
-  revision: 'b1ea495d3eddee718bc2729b69fe2fc1202d7775',
-  branch: 'gardener_widget',
+  revision: 'f559d943b9f749a7ba808cdef2870d99c206b83a',
+  branch: 'widget',
   version: '0.2.5',
-  date: '2020-04-27T14:42:52.306Z',
+  date: '2020-05-12T19:31:28.551Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
