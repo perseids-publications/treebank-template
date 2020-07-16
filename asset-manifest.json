@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/treebank-template/static/css/main.bd98509e.chunk.css",
-    "main.js": "/treebank-template/static/js/main.bf774860.chunk.js",
-    "main.js.map": "/treebank-template/static/js/main.bf774860.chunk.js.map",
+    "main.js": "/treebank-template/static/js/main.c36ac757.chunk.js",
+    "main.js.map": "/treebank-template/static/js/main.c36ac757.chunk.js.map",
     "runtime-main.js": "/treebank-template/static/js/runtime-main.94c54c7b.js",
     "runtime-main.js.map": "/treebank-template/static/js/runtime-main.94c54c7b.js.map",
-    "static/css/2.354f031a.chunk.css": "/treebank-template/static/css/2.354f031a.chunk.css",
-    "static/js/2.1716a128.chunk.js": "/treebank-template/static/js/2.1716a128.chunk.js",
-    "static/js/2.1716a128.chunk.js.map": "/treebank-template/static/js/2.1716a128.chunk.js.map",
+    "static/css/2.0379961b.chunk.css": "/treebank-template/static/css/2.0379961b.chunk.css",
+    "static/js/2.3bbb5d8c.chunk.js": "/treebank-template/static/js/2.3bbb5d8c.chunk.js",
+    "static/js/2.3bbb5d8c.chunk.js.map": "/treebank-template/static/js/2.3bbb5d8c.chunk.js.map",
     "index.html": "/treebank-template/index.html",
-    "precache-manifest.2d587fcbdb3b4bafdc1330eb9b9b77cd.js": "/treebank-template/precache-manifest.2d587fcbdb3b4bafdc1330eb9b9b77cd.js",
+    "precache-manifest.671892115e4f7caea31b0ad73f62d954.js": "/treebank-template/precache-manifest.671892115e4f7caea31b0ad73f62d954.js",
     "service-worker.js": "/treebank-template/service-worker.js",
-    "static/css/2.354f031a.chunk.css.map": "/treebank-template/static/css/2.354f031a.chunk.css.map",
+    "static/css/2.0379961b.chunk.css.map": "/treebank-template/static/css/2.0379961b.chunk.css.map",
     "static/css/main.bd98509e.chunk.css.map": "/treebank-template/static/css/main.bd98509e.chunk.css.map",
-    "static/js/2.1716a128.chunk.js.LICENSE.txt": "/treebank-template/static/js/2.1716a128.chunk.js.LICENSE.txt"
+    "static/js/2.3bbb5d8c.chunk.js.LICENSE.txt": "/treebank-template/static/js/2.3bbb5d8c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.94c54c7b.js",
-    "static/css/2.354f031a.chunk.css",
-    "static/js/2.1716a128.chunk.js",
+    "static/css/2.0379961b.chunk.css",
+    "static/js/2.3bbb5d8c.chunk.js",
     "static/css/main.bd98509e.chunk.css",
-    "static/js/main.bf774860.chunk.js"
+    "static/js/main.c36ac757.chunk.js"
   ]
 }
