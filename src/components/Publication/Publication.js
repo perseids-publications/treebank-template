@@ -54,6 +54,29 @@ const renderMarkdownRow = (title, markdown) => (
   </tr>
 );
 
+const renderAnalysis = (title, analysis, xml, { params: { chunk } }) => {
+  const analysisArray = Array.isArray(analysis) ? analysis : [analysis];
+  // const xmlUrl = `${window.location.origin}${process.env.PUBLIC_URL}/xml/${xml}`;
+  const xmlUrl = `https://perseids-publications.github.io${process.env.PUBLIC_URL}/xml/${xml}`;
+  const encodedUrl = Buffer.from(xmlUrl).toString('base64');
+  const links = analysisArray.map(({ name, template }) => (
+    <>
+      <a href={`${template}/${encodedUrl}/${chunk}`} target="_blank" rel="noopener noreferrer"> {name}
+      </a>
+      <br />
+    </>
+  ));
+
+  return (
+    <tr>
+      <th scope="col">{title}</th>
+      <td className={styles.publicationRow}>
+        {links}
+      </td>
+    </tr>
+  );
+};
+
 const renderLocusRow = (title, text, publicationPath) => (
   <tr>
     <th scope="col">{title}</th>
@@ -117,6 +140,7 @@ class Publication extends Component {
       locus,
       publicationLink,
       notes,
+      analysis,
       xml,
       chunks,
       match,
@@ -161,6 +185,7 @@ class Publication extends Component {
               {!!editors && renderRow('Editors', editors)}
               {!!publicationLink && renderLinkRow('Link', publicationLink)}
               {!!notes && renderMarkdownRow('Notes', notes)}
+              {!!analysis && renderAnalysis('Data analysis', analysis, xml, match)}
             </tbody>
           </table>
           <div className={styles.treebankWrapper}>
@@ -196,6 +221,10 @@ Publication.propTypes = {
   locus: PropTypes.string.isRequired,
   publicationLink: PropTypes.string,
   notes: PropTypes.string,
+  // analysis: PropTypes.oneOfType([
+  //   PropTypes.string,
+  //   PropTypes.arrayOf(PropTypes.string),
+  // ]),
   xml: PropTypes.string.isRequired,
   chunks: chunksType.isRequired,
   match: publicationMatchType.isRequired,
@@ -207,6 +236,7 @@ Publication.defaultProps = {
   link: undefined,
   publicationLink: undefined,
   notes: undefined,
+  analysis: undefined,
 };
 
 export default Publication;

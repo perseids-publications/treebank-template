@@ -6,6 +6,16 @@
   "report": "https://github.com/perseids-publications/treebank-template/issues",
   "github": "https://github.com/perseids-publications/treebank-template/",
   "twitter": "https://twitter.com/PerseidsProject",
+  "analysis": [
+    {
+      "name": "Virtual reality",
+      "template": "https://apps.perseids.org/treebank-vr"
+    },
+    {
+      "name": "Word cloud",
+      "template": "http://localhost:3001/treebank-wordcloud"
+    }
+  ],
   "collections": [
     {
       "title": "Information",
