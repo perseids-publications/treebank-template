@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/treebank-template/static/css/main.e4092a8d.chunk.css",
-    "main.js": "/treebank-template/static/js/main.1c657c51.chunk.js",
-    "main.js.map": "/treebank-template/static/js/main.1c657c51.chunk.js.map",
+    "main.js": "/treebank-template/static/js/main.698e0f3f.chunk.js",
+    "main.js.map": "/treebank-template/static/js/main.698e0f3f.chunk.js.map",
     "runtime-main.js": "/treebank-template/static/js/runtime-main.eaf5f551.js",
     "runtime-main.js.map": "/treebank-template/static/js/runtime-main.eaf5f551.js.map",
     "static/css/2.684cea0e.chunk.css": "/treebank-template/static/css/2.684cea0e.chunk.css",
-    "static/js/2.5f94708f.chunk.js": "/treebank-template/static/js/2.5f94708f.chunk.js",
-    "static/js/2.5f94708f.chunk.js.map": "/treebank-template/static/js/2.5f94708f.chunk.js.map",
+    "static/js/2.30d074c0.chunk.js": "/treebank-template/static/js/2.30d074c0.chunk.js",
+    "static/js/2.30d074c0.chunk.js.map": "/treebank-template/static/js/2.30d074c0.chunk.js.map",
     "index.html": "/treebank-template/index.html",
-    "precache-manifest.ce66be7dde52d0ccd00a67b23656d2a5.js": "/treebank-template/precache-manifest.ce66be7dde52d0ccd00a67b23656d2a5.js",
+    "precache-manifest.f462c7ee21bb9c6a8947dd1e54c6db71.js": "/treebank-template/precache-manifest.f462c7ee21bb9c6a8947dd1e54c6db71.js",
     "service-worker.js": "/treebank-template/service-worker.js",
     "static/css/2.684cea0e.chunk.css.map": "/treebank-template/static/css/2.684cea0e.chunk.css.map",
     "static/css/main.e4092a8d.chunk.css.map": "/treebank-template/static/css/main.e4092a8d.chunk.css.map",
-    "static/js/2.5f94708f.chunk.js.LICENSE.txt": "/treebank-template/static/js/2.5f94708f.chunk.js.LICENSE.txt",
+    "static/js/2.30d074c0.chunk.js.LICENSE.txt": "/treebank-template/static/js/2.30d074c0.chunk.js.LICENSE.txt",
     "static/media/actions-enable.png": "/treebank-template/static/media/actions-enable.2e3d7005.png",
     "static/media/actions.png": "/treebank-template/static/media/actions.2e98128b.png",
     "static/media/commit.png": "/treebank-template/static/media/commit.73e1f04f.png",
@@ -55,8 +55,8 @@
   "entrypoints": [
     "static/js/runtime-main.eaf5f551.js",
     "static/css/2.684cea0e.chunk.css",
-    "static/js/2.5f94708f.chunk.js",
+    "static/js/2.30d074c0.chunk.js",
     "static/css/main.e4092a8d.chunk.css",
-    "static/js/main.1c657c51.chunk.js"
+    "static/js/main.698e0f3f.chunk.js"
   ]
 }
