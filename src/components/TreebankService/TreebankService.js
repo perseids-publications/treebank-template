@@ -19,8 +19,8 @@ const config = {
 
 const error = (request, message, code) => ResponseMessage.Error(request, new Error(message), code);
 
-const redirectLink = ({ wordIds, config: c, sentenceId }) => {
-  const query = buildQueryString({ w: wordIds, config: c });
+const redirectLink = ({ wordIds, sentenceId }) => {
+  const query = buildQueryString({ w: wordIds });
 
   if (query === '') {
     return sentenceId;
