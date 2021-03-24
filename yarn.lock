@@ -2740,9 +2740,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001035, caniuse-lite@^1.0.30001093, caniuse-lite@^1.0.30001109:
-  version "1.0.30001109"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001109.tgz#a9f3f26a0c3753b063d7acbb48dfb9c0e46f2b19"
-  integrity sha512-4JIXRodHzdS3HdK8nSgIqXYLExOvG+D2/EenSvcub2Kp3QEADjo2v2oUn5g0n0D+UNwG9BtwKOyGcSq2qvQXvQ==
+  version "1.0.30001204"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001204.tgz"
+  integrity sha512-JUdjWpcxfJ9IPamy2f5JaRDCaqJOxDzOSKtbdx4rH9VivMd1vIzoPumsJa9LoMIi4Fx2BV2KZOxWhNkBjaYivQ==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -11020,10 +11020,10 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-treebank-react@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/treebank-react/-/treebank-react-1.0.1.tgz#0f40c8146016454f54ac18bee7b4cd7ce8837ee7"
-  integrity sha512-+PPwaM3nooo4kOWU21doDBXqmgti9sD5VZ8S6GDvdBWeMY7/80UF5p0ERJIXCUCr8nwL0QJ6AYourJ8l5n8KTQ==
+treebank-react@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/treebank-react/-/treebank-react-1.1.0.tgz#ffeb38e96a149c34f93b0a709ee4f8a0d717f592"
+  integrity sha512-vmuVZsQUtBeQX1PqegoesZE9wfTHkhi6CR0aqV5mbjTAXa57tIpNY+nKC97cfQoIcPVnOxJjV2x2AT8Di6/upA==
   dependencies:
     cross-fetch "^3.0.6"
     d3 "^6.2.0"

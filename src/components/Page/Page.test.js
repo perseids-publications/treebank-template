@@ -103,20 +103,9 @@ it('renders a publication', () => {
   expect(tree).toMatchSnapshot();
 });
 
-it('renders a publication with additional arguments to Arethusa', () => {
+it('renders a publication with highlighted words', () => {
   const component = (
     <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1?w=2']}>
-      <Page config={config} />
-    </MemoryRouter>
-  );
-  const tree = renderer.create(component).toJSON();
-
-  expect(tree).toMatchSnapshot();
-});
-
-it('renders a publication with a template that shows the morphology', () => {
-  const component = (
-    <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1?config=sidepanel']}>
       <Page config={config} />
     </MemoryRouter>
   );
@@ -134,25 +123,6 @@ it('renders a publication with markdown', () => {
   const tree = renderer.create(component).toJSON();
 
   expect(tree).toMatchSnapshot();
-});
-
-it('renders a publication with a subdoc', () => {
-  const component = (
-    <MemoryRouter initialEntries={['/on-the-crown-1-50/1']}>
-      <Page config={config} />
-    </MemoryRouter>
-  );
-  const renderedComponent = renderer.create(component);
-  const originalArethusaApiGetSubdocFun = window.arethusaApiGetSubdocFun;
-
-  window.arethusaApiGetSubdocFun = () => '1.1';
-  window.document.body.dispatchEvent(new window.Event('ArethusaLoaded'));
-
-  const tree = renderedComponent.toJSON();
-
-  expect(tree).toMatchSnapshot();
-
-  window.arethusaApiGetSubdocFun = originalArethusaApiGetSubdocFun;
 });
 
 it('renders a publication with a numbers array', () => {
@@ -297,19 +267,4 @@ it('renders 404 when no instruction route matches', () => {
   const tree = renderer.create(component).toJSON();
 
   expect(tree).toMatchSnapshot();
-});
-
-it('renders differently when treebankReact is set', () => {
-  config.treebankReact = true;
-
-  const component = (
-    <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
-      <Page config={config} />
-    </MemoryRouter>
-  );
-  const tree = renderer.create(component).toJSON();
-
-  expect(tree).toMatchSnapshot();
-
-  delete config.treebankReact;
 });
