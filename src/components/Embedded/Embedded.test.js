@@ -27,8 +27,6 @@ it('provides an API to communicate with an embedded publication', () => {
   const tree = renderer.create(component);
   const { instance: { messageHandler } } = tree.root.findByType(TreebankService);
 
-  window.document.body.dispatchEvent(new window.Event('ArethusaLoaded'));
-
   messageHandler(
     { ID: 'test', body: { gotoSentence: { sentenceId: '5' } } },
     () => {},
@@ -45,8 +43,6 @@ it('the API can be used to select words', () => {
   );
   const tree = renderer.create(component);
   const { instance: { messageHandler } } = tree.root.findByType(TreebankService);
-
-  window.document.body.dispatchEvent(new window.Event('ArethusaLoaded'));
 
   messageHandler(
     { ID: 'test', body: { gotoSentence: { sentenceId: '5', wordIds: ['12'] } } },

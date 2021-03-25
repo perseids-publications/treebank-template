@@ -8,8 +8,6 @@ import {
 } from 'alpheios-messaging';
 import { buildQueryString } from '../../lib/params';
 
-import ArethusaWrapper from '../ArethusaWrapper';
-
 const config = {
   name: 'treebank',
   targetIframeID: 'string-not-used',
@@ -33,41 +31,26 @@ class TreebankService extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      arethusaLoaded: false,
-      redirectTo: null,
-    };
+    this.state = { redirectTo: null };
     this.messageHandler = this.messageHandler.bind(this);
-    this.setArethusaLoaded = this.setArethusaLoaded.bind(this);
   }
 
   componentDidMount() {
     this.destination = new Destination({ ...config, receiverCB: this.messageHandler });
     this.service = new MessagingService('treebank-service', this.destination);
-
-    // eslint-disable-next-line no-undef
-    window.document.body.addEventListener('ArethusaLoaded', this.setArethusaLoaded);
   }
 
   componentWillUnmount() {
     this.destination.deregister();
-
-    // eslint-disable-next-line no-undef
-    window.document.body.removeEventListener('ArethusaLoaded', this.setArethusaLoaded);
-  }
-
-  setArethusaLoaded() {
-    this.setState({ arethusaLoaded: true });
   }
 
   messageHandler(request, responseFn) {
-    const { arethusa } = this.props;
-    const { arethusaLoaded } = this.state;
+    const { loaded } = this.props;
     const { body } = request;
     const [name] = Object.keys(body);
 
-    if (!arethusaLoaded) {
-      responseFn(error(request, 'Arethusa is Not Loaded', ResponseMessage.errorCodes.SERVICE_UNINITIALIZED));
+    if (!loaded) {
+      responseFn(error(request, 'Treebank is not loaded', ResponseMessage.errorCodes.SERVICE_UNINITIALIZED));
       return;
     }
 
@@ -81,26 +64,13 @@ class TreebankService extends Component {
           responseFn(ResponseMessage.Success(request, { status: 'success' }));
           break;
         case 'getMorph':
-          responseFn(ResponseMessage.Success(
-            request,
-            arethusa.getMorph(body.getMorph.sentenceId, body.getMorph.wordId),
-          ));
+          responseFn(error(request, `Unsupported request: ${name}`, ResponseMessage.errorCodes.UNKNOWN_REQUEST));
           break;
         case 'refreshView':
-          responseFn(ResponseMessage.Success(request, arethusa.refreshView()));
+          responseFn(error(request, `Unsupported request: ${name}`, ResponseMessage.errorCodes.UNKNOWN_REQUEST));
           break;
         case 'findWord':
-          responseFn(
-            ResponseMessage.Success(
-              request,
-              arethusa.findWord(
-                body.findWord.sentenceId,
-                body.findWord.word,
-                body.findWord.prefix,
-                body.findWord.suffix,
-              ),
-            ),
-          );
+          responseFn(error(request, `Unsupported request: ${name}`, ResponseMessage.errorCodes.UNKNOWN_REQUEST));
           break;
         default:
           responseFn(error(request, `Unsupported request: ${name}`, ResponseMessage.errorCodes.UNKNOWN_REQUEST));
@@ -120,7 +90,7 @@ class TreebankService extends Component {
 }
 
 TreebankService.propTypes = {
-  arethusa: PropTypes.instanceOf(ArethusaWrapper).isRequired,
+  loaded: PropTypes.bool.isRequired,
 };
 
 export default TreebankService;

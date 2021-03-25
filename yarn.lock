@@ -1977,11 +1977,6 @@ aproba@^1.1.1:
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
   integrity sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
 
-arethusa-widget@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/arethusa-widget/-/arethusa-widget-2.1.3.tgz#786f32f936bf665bf2bc47969d0850a9b2497e9e"
-  integrity sha512-KAaMe2l2bMUMowEl43dnwucOEn7kM7xcxBanuoLRR03+0GqdL+QaatVEyakv4BA/v4huqdVuspT6uRLsM3nbfQ==
-
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
@@ -11020,10 +11015,10 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-treebank-react@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/treebank-react/-/treebank-react-1.1.0.tgz#ffeb38e96a149c34f93b0a709ee4f8a0d717f592"
-  integrity sha512-vmuVZsQUtBeQX1PqegoesZE9wfTHkhi6CR0aqV5mbjTAXa57tIpNY+nKC97cfQoIcPVnOxJjV2x2AT8Di6/upA==
+treebank-react@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/treebank-react/-/treebank-react-1.2.0.tgz#885db5a7fe1f564b8d62fbb5bca20919a1cd53f9"
+  integrity sha512-9teTi7PsgGfUI8BnQw8MjjSJPM7TmMAFxbzHKokP7GyRnGo3QFPZArMigdFrgbmokYP/rPWez1AP3DX0pxG9lw==
   dependencies:
     cross-fetch "^3.0.6"
     d3 "^6.2.0"
