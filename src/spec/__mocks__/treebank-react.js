@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 
-let treebank; let id; let
-  highlight;
+let treebank;
+let id;
+let highlight;
 
 const hash = (string) => (
   string.split('').reduce(

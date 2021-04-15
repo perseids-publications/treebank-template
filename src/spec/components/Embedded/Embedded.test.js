@@ -8,9 +8,9 @@ import config from '../../config.test.json';
 import treebanks from '../../treebanks.test.json';
 
 import Embedded from '../../../components/Embedded';
-// import TreebankService from '../../../components/TreebankService';
 
 jest.mock('treebank-react');
+jest.mock('alpheios-messaging');
 
 const server = setupServer(
   rest.get(`${process.env.PUBLIC_URL}/xml/lysias-1-1-50.xml`, (req, res, ctx) => (
@@ -37,39 +37,50 @@ it('renders an embedded publication', async () => {
   expect(container).toMatchSnapshot();
 });
 
-// it('provides an API to communicate with an embedded publication', () => {
-//   const component = (
-//     <MemoryRouter initialEntries={['/embed/on-the-murder-of-eratosthenes-1-50/1']}>
-//       <Embedded config={config} />
-//     </MemoryRouter>
-//   );
-//   const tree = renderer.create(component);
-//   const { instance: { messageHandler } } = tree.root.findByType(TreebankService);
-//
-//   messageHandler(
-//     { ID: 'test', body: { gotoSentence: { sentenceId: '5' } } },
-//     () => {},
-//   );
-//
-//   expect(tree).toMatchSnapshot();
-// });
-//
-// it('the API can be used to select words', () => {
-//   const component = (
-//     <MemoryRouter initialEntries={['/embed/on-the-murder-of-eratosthenes-1-50/1']}>
-//       <Embedded config={config} />
-//     </MemoryRouter>
-//   );
-//   const tree = renderer.create(component);
-//   const { instance: { messageHandler } } = tree.root.findByType(TreebankService);
-//
-//   messageHandler(
-//     { ID: 'test', body: { gotoSentence: { sentenceId: '5', wordIds: ['12'] } } },
-//     () => {},
-//   );
-//
-//   expect(tree).toMatchSnapshot();
-// });
+it('the API supports gotoSentence', async () => {
+  const component = (
+    <MemoryRouter initialEntries={['/embed/on-the-murder-of-eratosthenes-1-50/1']}>
+      <Embedded config={config} />
+    </MemoryRouter>
+  );
+  const { container, queryByText } = render(component);
+  const request = { ID: 'test', body: { gotoSentence: { sentenceId: '5' } } };
+
+  await waitForElementToBeRemoved(() => queryByText('Loading...'));
+  global.sendRequestToMock(request, () => {});
+
+  expect(container).toMatchSnapshot();
+});
+
+it('the API supports gotoSentence with highlighted words', async () => {
+  const component = (
+    <MemoryRouter initialEntries={['/embed/on-the-murder-of-eratosthenes-1-50/1']}>
+      <Embedded config={config} />
+    </MemoryRouter>
+  );
+  const { container, queryByText } = render(component);
+  const request = { ID: 'test', body: { gotoSentence: { sentenceId: '5', wordIds: ['12'] } } };
+
+  await waitForElementToBeRemoved(() => queryByText('Loading...'));
+  global.sendRequestToMock(request, () => {});
+
+  expect(container).toMatchSnapshot();
+});
+
+it('the API performs a no-op for refreshView', async () => {
+  const component = (
+    <MemoryRouter initialEntries={['/embed/on-the-murder-of-eratosthenes-1-50/1']}>
+      <Embedded config={config} />
+    </MemoryRouter>
+  );
+  const { container, queryByText } = render(component);
+  const request = { ID: 'test', body: { refreshView: true } };
+
+  await waitForElementToBeRemoved(() => queryByText('Loading...'));
+  global.sendRequestToMock(request, () => {});
+
+  expect(container).toMatchSnapshot();
+});
 
 it('renders 404 when publication not found', () => {
   const component = (
