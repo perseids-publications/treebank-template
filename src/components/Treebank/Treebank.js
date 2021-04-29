@@ -74,7 +74,7 @@ class Treebank extends Component {
           <TB treebank={loadedXml}>
             <Sentence
               id={chunk}
-              callback={({ $: { subdoc } }) => setSubdoc(subdoc)}
+              callback={({ sentence: { $: { subdoc } } }) => setSubdoc(subdoc)}
               highlight={highlight || []}
             >
               <div className={styles.text}>

@@ -125,7 +125,7 @@ it('renders a publication', async () => {
 
 it('renders a publication with a subdoc', async () => {
   const { treebankCallbackValue } = global;
-  global.treebankCallbackValue = { $: { subdoc: 'example-subdoc' } };
+  global.treebankCallbackValue = { sentence: { $: { subdoc: 'example-subdoc' } } };
 
   const component = (
     <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
