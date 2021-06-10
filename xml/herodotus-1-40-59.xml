@@ -19,7 +19,7 @@
       <address/>
       <uri>http://github.com/latin-language-toolkit/arethusa</uri>
    </annotator>
-   <sentence id="1" document_id="urn:cts:greekLit:tlg0016.tlg001.perseus-grc1" subdoc="1.40"
+   <sentence id="1" document_id="urn:cts:greekLit:tlg0016.tlg001.perseus-grc1" subdoc="1.40" speaker="test 1"
              span="">
       <word id="1" form="ἀμείβεται" lemma="ἀμείβω" postag="v3spie---" relation="PRED"
             head="0"/>
@@ -41,7 +41,7 @@
             head="12"/>
       <word id="15" form="." lemma="punc1" postag="u--------" relation="AuxK" head="0"/>
    </sentence>
-   <sentence id="2" document_id="urn:cts:greekLit:tlg0016.tlg001.perseus-grc1" subdoc="1.40"
+   <sentence id="2" document_id="urn:cts:greekLit:tlg0016.tlg001.perseus-grc1" subdoc="1.40" speaker="test 2"
              span="">
       <word id="1" form="ὡς" lemma="ὡς" postag="d--------" relation="AuxZ" head="3"/>
       <word id="2" form="ὦν" lemma="οὖν" postag="d--------" relation="AuxY" head="9"/>
