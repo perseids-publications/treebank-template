@@ -74,9 +74,11 @@ class Publication extends Component {
     this.state = {
       arethusaLoaded: false,
       subDoc: '',
+      speaker: '',
     };
 
     this.setSubdoc = this.setSubdoc.bind(this);
+    this.callback = this.callback.bind(this);
 
     this.arethusa = new ArethusaWrapper();
   }
@@ -106,6 +108,10 @@ class Publication extends Component {
     this.setState({ subDoc, arethusaLoaded: true });
   }
 
+  callback({ $: { subdoc, speaker } }) {
+    this.setState({ subDoc: subdoc, speaker });
+  }
+
   render() {
     const {
       logo,
@@ -125,7 +131,7 @@ class Publication extends Component {
       location,
     } = this.props;
 
-    const { subDoc } = this.state;
+    const { subDoc, speaker } = this.state;
 
     return (
       <>
@@ -160,6 +166,7 @@ class Publication extends Component {
               {!!work && renderRow('Work', work)}
               {!!locus && renderLocusRow('Locus', locus, publicationPath)}
               {!!subDoc && renderRow('Reference', subDoc)}
+              {!!speaker && renderRow('Speaker', speaker)}
               {!!editors && renderRow('Editors', editors)}
               {!!publicationLink && renderLinkRow('Link', publicationLink)}
               {!!license && renderRow('License', license)}
@@ -174,7 +181,7 @@ class Publication extends Component {
               match={match}
               arethusa={this.arethusa}
               treebankReact={treebankReact}
-              setSubdoc={(s) => this.setState({ subDoc: s })}
+              setSubdoc={this.callback}
             />
           </div>
           <div className="pt-1 pb-4 text-right">

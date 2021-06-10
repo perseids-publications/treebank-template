@@ -80,7 +80,7 @@ class Treebank extends Component {
         />
         <div className="mb-4">
           <TB treebank={loadedXml}>
-            <Sentence id={chunk} callback={({ $: { subdoc } }) => setSubdoc(subdoc)}>
+            <Sentence id={chunk} callback={setSubdoc}>
               <div className={styles.text}>
                 <Text />
               </div>
