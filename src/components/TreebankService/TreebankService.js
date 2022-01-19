@@ -7,7 +7,7 @@ import {
   WindowIframeDestination as Destination,
 } from 'alpheios-messaging';
 import { buildQueryString } from '../../lib/params';
-import { alpheiosAnnotation } from '../../lib/parsing';
+import { alpheiosAnnotation, alpheiosFindWord } from '../../lib/parsing';
 
 const config = {
   name: 'treebank',
@@ -78,7 +78,18 @@ class TreebankService extends Component {
         case 'refreshView':
           break;
         case 'findWord':
-          responseFn(error(request, `Unsupported request: ${name}`, ResponseMessage.errorCodes.UNKNOWN_REQUEST));
+          responseFn(
+            ResponseMessage.Success(
+              request,
+              alpheiosFindWord({
+                treebank,
+                sentenceId: body.findWord.sentenceId,
+                word: body.findWord.word,
+                prefix: body.findWord.prefix,
+                suffix: body.findWord.suffix,
+              }),
+            ),
+          );
           break;
         default:
           responseFn(error(request, `Unsupported request: ${name}`, ResponseMessage.errorCodes.UNKNOWN_REQUEST));

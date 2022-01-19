@@ -25,6 +25,16 @@ const getLemma = (word) => {
   }
 };
 
+const getSentence = (treebank, sentenceId) => {
+  try {
+    return treebank.sentence.find(
+      ({ $: { id } }) => id === sentenceId,
+    );
+  } catch {
+    return {};
+  }
+};
+
 const getMood = (deconstructed) => {
   for (let ii = 0; ii < deconstructed.length; ii += 1) {
     if (deconstructed[ii][0].key === 'mood') {
@@ -126,9 +136,7 @@ const alpheiosAnnotation = ({
 }) => {
   try {
     const sentenceIdString = String(sentenceId);
-    const sentence = treebank.treebank.sentence.find(
-      ({ $: { id } }) => id === sentenceIdString,
-    );
+    const sentence = getSentence(treebank.treebank, sentenceIdString);
 
     const wordIdString = String(wordId);
     const word = sentence.word.find(({ $: { id } }) => id === wordIdString);
@@ -140,7 +148,71 @@ const alpheiosAnnotation = ({
   }
 };
 
+// Unicode normalize and strip accents
+const normalize = (text) => (
+  text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+);
+
+// Simplified version of:
+// https://github.com/alpheios-project/arethusa/blob/0a82a2ad9cc7468ea781bfa023a1dddbd77130c6/app/js/arethusa.search/services/search.js#L168
+// This code will work for most cases where the above works. It will also match
+// words that differ only by diacritics.
+// However, there are some corner cases where it will not return the same
+// results. Given the significant reduction of complexity, this is an
+// acceptable trade-off.
+const alpheiosFindWord = ({
+  treebank, sentenceId, word, prefix, suffix,
+}) => {
+  try {
+    const sentenceIdString = String(sentenceId);
+    const wordNormalized = normalize(word);
+    const prefixNormalized = normalize(prefix || '');
+    const suffixNormalized = normalize(suffix || '');
+    const sentence = getSentence(treebank.treebank, sentenceIdString);
+
+    const ids = [];
+
+    for (let ii = 0; ii < sentence.word.length; ii += 1) {
+      const test = normalize(sentence.word[ii].$.form);
+
+      if (test !== wordNormalized) {
+        continue;
+      }
+
+      if (prefix !== '') {
+        if (ii <= 0) {
+          continue;
+        }
+
+        const prefixTest = normalize(sentence.word[ii - 1].$.form);
+
+        if (prefixTest !== prefixNormalized) {
+          continue;
+        }
+      }
+
+      if (suffix !== '') {
+        if (ii >= sentence.word.length - 1) {
+          continue;
+        }
+
+        const suffixTest = normalize(sentence.word[ii + 1].$.form);
+
+        if (suffixTest !== suffixNormalized) {
+          continue;
+        }
+      }
+
+      ids.push(sentence.word[ii].$.id);
+    }
+
+    return ids;
+  } catch {
+    return [];
+  }
+};
+
 export {
-  // eslint-disable-next-line import/prefer-default-export
   alpheiosAnnotation,
+  alpheiosFindWord,
 };
