@@ -124,8 +124,8 @@ it('renders a publication', async () => {
 });
 
 it('renders a publication with a subdoc', async () => {
-  const { treebankCallbackValue } = global;
-  global.treebankCallbackValue = { sentence: { $: { subdoc: 'example-subdoc' } } };
+  const { sentenceCallbackValue } = global;
+  global.sentenceCallbackValue = { sentence: { $: { subdoc: 'example-subdoc' } } };
 
   const component = (
     <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
@@ -139,7 +139,7 @@ it('renders a publication with a subdoc', async () => {
 
   expect(container).toMatchSnapshot();
 
-  global.treebankCallbackValue = treebankCallbackValue;
+  global.sentenceCallbackValue = sentenceCallbackValue;
 });
 
 it('renders a publication with highlighted words', async () => {

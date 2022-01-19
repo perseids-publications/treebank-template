@@ -7,6 +7,7 @@ import {
   WindowIframeDestination as Destination,
 } from 'alpheios-messaging';
 import { buildQueryString } from '../../lib/params';
+import { alpheiosAnnotation } from '../../lib/parsing';
 
 const config = {
   name: 'treebank',
@@ -45,7 +46,7 @@ class TreebankService extends Component {
   }
 
   messageHandler(request, responseFn) {
-    const { loaded } = this.props;
+    const { loaded, treebank, configuration } = this.props;
     const { body } = request;
     const [name] = Object.keys(body);
 
@@ -64,7 +65,15 @@ class TreebankService extends Component {
           responseFn(ResponseMessage.Success(request, { status: 'success' }));
           break;
         case 'getMorph':
-          responseFn(error(request, `Unsupported request: ${name}`, ResponseMessage.errorCodes.UNKNOWN_REQUEST));
+          responseFn(ResponseMessage.Success(
+            request,
+            alpheiosAnnotation({
+              treebank,
+              configuration,
+              sentenceId: body.getMorph.sentenceId,
+              wordId: body.getMorph.wordId,
+            }),
+          ));
           break;
         case 'refreshView':
           break;
@@ -90,6 +99,15 @@ class TreebankService extends Component {
 
 TreebankService.propTypes = {
   loaded: PropTypes.bool.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  treebank: PropTypes.object,
+  // eslint-disable-next-line react/forbid-prop-types
+  configuration: PropTypes.object,
+};
+
+TreebankService.defaultProps = {
+  treebank: undefined,
+  configuration: undefined,
 };
 
 export default TreebankService;

@@ -39,8 +39,8 @@ const Sentence = ({
   highlight = hl;
 
   useEffect(() => {
-    if (callback && global.treebankCallbackValue) {
-      callback(global.treebankCallbackValue);
+    if (callback && global.sentenceCallbackValue) {
+      callback(global.sentenceCallbackValue);
     }
   }, [i]);
 

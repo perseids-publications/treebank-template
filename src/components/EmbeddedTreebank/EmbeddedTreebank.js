@@ -23,41 +23,19 @@ const renderLoading = () => (
   </div>
 );
 
-const renderTreebank = (loadedXml, publication, chunk, highlight) => (
-  <div className={styles.treebankContainer}>
-    <TB treebank={loadedXml}>
-      <Sentence
-        id={chunk}
-        highlight={highlight || []}
-      >
-        <div className={styles.text}>
-          <Text />
-        </div>
-        <div className={styles.graph}>
-          <Graph />
-        </div>
-        <PartOfSpeech />
-      </Sentence>
-    </TB>
-    <div className={styles.links}>
-      <p>
-        <a href={`${process.env.PUBLIC_URL}/${publication}/${chunk}`} target="_blank" rel="noopener noreferrer">
-          Credits and more information
-        </a>
-      </p>
-    </div>
-  </div>
-);
-
 class EmbeddedTreebank extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       loadedXml: false,
+      configuration: undefined,
+      treebank: undefined,
     };
 
     this.additionalArgs = this.additionalArgs.bind(this);
+    this.callback = this.callback.bind(this);
+    this.renderTreebank = this.renderTreebank.bind(this);
   }
 
   componentDidMount() {
@@ -76,22 +54,60 @@ class EmbeddedTreebank extends Component {
     return parse(search);
   }
 
-  render() {
+  callback({ treebank, configuration }) {
+    this.setState({ treebank, configuration });
+  }
+
+  renderTreebank() {
     const { match } = this.props;
+    const { loadedXml } = this.state;
+
     const { params: { publication, chunk } } = match;
     const fullQuery = this.additionalArgs();
 
-    const { loadedXml } = this.state;
     const { w: highlight } = fullQuery;
 
-    const component = loadedXml
-      ? renderTreebank(loadedXml, publication, chunk, highlight)
-      : renderLoading();
+    return (
+      <div className={styles.treebankContainer}>
+        <TB treebank={loadedXml}>
+          <Sentence
+            id={chunk}
+            highlight={highlight || []}
+            callback={this.callback}
+          >
+            <div className={styles.text}>
+              <Text />
+            </div>
+            <div className={styles.graph}>
+              <Graph />
+            </div>
+            <PartOfSpeech />
+          </Sentence>
+        </TB>
+        <div className={styles.links}>
+          <p>
+            <a href={`${process.env.PUBLIC_URL}/${publication}/${chunk}`} target="_blank" rel="noopener noreferrer">
+              Credits and more information
+            </a>
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  render() {
+    const { loadedXml, treebank, configuration } = this.state;
+    const loaded = !!(loadedXml && treebank && configuration);
 
     return (
       <>
-        {component}
-        <TreebankService loaded={!!loadedXml} />
+        {!loaded && renderLoading()}
+        {loadedXml && this.renderTreebank()}
+        <TreebankService
+          loaded={loaded}
+          treebank={treebank}
+          configuration={configuration}
+        />
       </>
     );
   }

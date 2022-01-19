@@ -11878,10 +11878,10 @@ tr46@^2.0.2:
   dependencies:
     punycode "^2.1.1"
 
-treebank-react@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/treebank-react/-/treebank-react-2.0.0.tgz#6d37dba5192b240d1b6d19d1e6f7f0ba083de255"
-  integrity sha512-I+00F/t6cu8oWU3nihzjBGRM3I5fROhYBl/EOOw2koFBmNx2WtDZRfOCx22x3rlWCtOOiCN2kiECGzkdcacjhw==
+treebank-react@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/treebank-react/-/treebank-react-2.1.0.tgz#c954104b63103a77e0011b1bdc7b37679cd34d0d"
+  integrity sha512-CMq/rsIDxpCjbhF4sW+CysHZy4YT0Wtmf6wWB2df7iIXX2aVGDoVPH574EbZWhVBdIaqGYcE9+24C+OcXm4k4A==
   dependencies:
     cross-fetch "^3.0.6"
     d3 "^6.2.0"

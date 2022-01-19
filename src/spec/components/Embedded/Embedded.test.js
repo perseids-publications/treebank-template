@@ -18,9 +18,22 @@ const server = setupServer(
   )),
 );
 
+let sentenceCallbackValue;
+
+beforeAll(() => server.listen());
+beforeAll(() => {
+  sentenceCallbackValue = global.sentenceCallbackValue;
+  global.sentenceCallbackValue = {
+    treebank: { $: {} },
+    configuration: { deconstructPostag: () => {} },
+  };
+});
 beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
+afterAll(() => {
+  global.sentenceCallbackValue = sentenceCallbackValue;
+});
 
 it('renders an embedded publication', async () => {
   const component = (
