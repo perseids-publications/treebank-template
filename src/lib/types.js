@@ -22,6 +22,9 @@ export const sectionType = shape({
   license: string,
   notes: string,
   chunks: chunksType.isRequired,
+  type: string,
+  l1: string,
+  l2: string,
 });
 
 export const publicationType = shape({

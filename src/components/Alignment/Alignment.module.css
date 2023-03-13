@@ -1,0 +1,13 @@
+.text {
+  font-size: 1.2rem;
+
+  display: flex;
+  gap: 0.2rem;
+}
+
+.segment {
+  flex: 1 1 0;
+  width: 0;
+  margin-bottom: 0.2rem;
+  background-color: #f2f2f2; /* TODO: remove and make library work with flex */
+}

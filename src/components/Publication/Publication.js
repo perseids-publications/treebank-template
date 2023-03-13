@@ -8,6 +8,7 @@ import styles from './Publication.module.css';
 
 import Header from '../Header';
 import Treebank from '../Treebank';
+import Alignment from '../Alignment';
 import Markdown from '../Markdown';
 
 const renderText = (text) => {
@@ -90,6 +91,9 @@ class Publication extends Component {
       chunks,
       match,
       location,
+      type,
+      l1,
+      l2,
     } = this.props;
 
     const { subDoc } = this.state;
@@ -134,13 +138,25 @@ class Publication extends Component {
             </tbody>
           </table>
           <div className={styles.treebankWrapper}>
-            <Treebank
-              xml={xml}
-              chunks={chunks}
-              location={location}
-              match={match}
-              setSubdoc={(s) => this.setState({ subDoc: s })}
-            />
+            {type === 'alignment' && (
+              <Alignment
+                xml={xml}
+                chunks={chunks}
+                location={location}
+                match={match}
+                l1={l1}
+                l2={l2}
+              />
+            )}
+            {type === 'treebank' && (
+              <Treebank
+                xml={xml}
+                chunks={chunks}
+                location={location}
+                match={match}
+                setSubdoc={(s) => this.setState({ subDoc: s })}
+              />
+            )}
           </div>
           <div className="pt-1 pb-4 text-right">
             <a href={`${process.env.PUBLIC_URL}/xml/${xml}`} target="_blank" rel="noopener noreferrer">
@@ -171,6 +187,9 @@ Publication.propTypes = {
   chunks: chunksType.isRequired,
   match: publicationMatchType.isRequired,
   location: locationType.isRequired,
+  type: PropTypes.string,
+  l1: PropTypes.string,
+  l2: PropTypes.string,
 };
 
 Publication.defaultProps = {
@@ -179,6 +198,9 @@ Publication.defaultProps = {
   publicationLink: undefined,
   license: undefined,
   notes: undefined,
+  type: 'treebank',
+  l1: undefined,
+  l2: undefined,
 };
 
 export default Publication;
