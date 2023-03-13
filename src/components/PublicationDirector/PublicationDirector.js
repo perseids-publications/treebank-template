@@ -27,6 +27,9 @@ class PublicationDirector extends Component {
             notes,
             xml,
             chunks,
+            type,
+            l1,
+            l2,
           } = section;
 
           argsLookup[path] = {
@@ -42,6 +45,9 @@ class PublicationDirector extends Component {
             notes,
             xml,
             chunks,
+            type,
+            l1,
+            l2,
           };
         });
       });

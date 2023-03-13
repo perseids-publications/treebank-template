@@ -6,6 +6,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 import config from '../../config.test.json';
 import treebanks from '../../treebanks.test.json';
+import alignments from '../../alignments.test.json';
 
 import Embedded from '../../../components/Embedded';
 
@@ -15,6 +16,9 @@ jest.mock('alpheios-messaging');
 const server = setupServer(
   rest.get(`${process.env.PUBLIC_URL}/xml/lysias-1-1-50.xml`, (req, res, ctx) => (
     res(ctx.delay(10), ctx.text(treebanks.lysias))
+  )),
+  rest.get(`${process.env.PUBLIC_URL}/xml/herodotus-1-1.xml`, (req, res, ctx) => (
+    res(ctx.delay(10), ctx.text(alignments.herodotus))
   )),
 );
 
@@ -48,6 +52,28 @@ it('renders an embedded publication', async () => {
   await waitForElementToBeRemoved(() => queryByText('Loading...'));
 
   expect(container).toMatchSnapshot();
+});
+
+it('renders an embedded alignment publication', async () => {
+  const section = config.collections[1].publications[0].sections[0];
+  const { xml } = section;
+
+  section.xml = 'herodotus-1-1.xml';
+  section.type = 'alignment';
+
+  const component = (
+    <MemoryRouter initialEntries={['/embed/on-the-murder-of-eratosthenes-1-50/1']}>
+      <Embedded config={config} />
+    </MemoryRouter>
+  );
+  const { container, queryByText } = render(component);
+
+  await waitForElementToBeRemoved(() => queryByText('Loading...'));
+
+  expect(container).toMatchSnapshot();
+
+  section.xml = xml;
+  delete section.type;
 });
 
 it('the API supports gotoSentence', async () => {
