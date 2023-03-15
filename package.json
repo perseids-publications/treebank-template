@@ -9,7 +9,7 @@
   "dependencies": {
     "@primer/octicons-react": "^10.0.0",
     "@testing-library/react": "^11.2.5",
-    "alignment-react": "^0.2.0",
+    "alignment-react": "^0.2.1",
     "alpheios-messaging": "git+https://github.com/alpheios-project/alpheios-messaging.git",
     "bootstrap": "^4.5.0",
     "cp-cli": "^2.0.0",
