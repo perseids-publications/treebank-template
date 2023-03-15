@@ -2298,10 +2298,10 @@ ajv@^7.0.2:
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
-alignment-react@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/alignment-react/-/alignment-react-0.1.1.tgz#a755b078fadf0fc952b4396e89184c5014d4a070"
-  integrity sha512-akq9CqP5KU8t8dWGHYx+UrUTGOTo0PgAEMJdS8A2HBNCKcigke3RQ1fztUGxYigYXVbSSMck3dYTsTlNYiHkaQ==
+alignment-react@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/alignment-react/-/alignment-react-0.2.0.tgz#6541f49089c188e136d8d2e5273babc74d5fe96f"
+  integrity sha512-DaHYiZGoU9HPWJM0XelaZ6KVxSinMO/9Lb1Bd0ICsqcsDEFRCREv+FC8+4PzojdIsJQPr+bJKz20emRDQCF9zA==
   dependencies:
     prop-types "^15.8.1"
     xml2js "^0.4.23"

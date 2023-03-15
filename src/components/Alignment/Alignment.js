@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {
   Alignment as AL,
   Collapse,
+  Comments,
   Segment,
   Sentence,
   Xml,
@@ -77,6 +78,7 @@ class Alignment extends Component {
                   <Segment lnum={l2} />
                 </div>
               </div>
+              <Comments />
               <Collapse title="XML">
                 <Xml />
               </Collapse>
