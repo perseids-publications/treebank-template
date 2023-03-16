@@ -6,6 +6,7 @@ import { MemoryRouter } from 'react-router-dom';
 
 import config from '../../config.test.json';
 import treebanks from '../../treebanks.test.json';
+import alignments from '../../alignments.test.json';
 
 import Page from '../../../components/Page';
 
@@ -14,6 +15,9 @@ jest.mock('treebank-react');
 const server = setupServer(
   rest.get(`${process.env.PUBLIC_URL}/xml/lysias-1-1-50.xml`, (req, res, ctx) => (
     res(ctx.delay(10), ctx.text(treebanks.lysias))
+  )),
+  rest.get(`${process.env.PUBLIC_URL}/xml/herodotus-1-1.xml`, (req, res, ctx) => (
+    res(ctx.delay(10), ctx.text(alignments.herodotus))
   )),
 );
 
@@ -179,6 +183,28 @@ it('renders a publication with a numbers array', async () => {
   await waitForElementToBeRemoved(() => queryByText('Loading...'));
 
   expect(container).toMatchSnapshot();
+});
+
+it('renders an alignment publication', async () => {
+  const section = config.collections[1].publications[0].sections[0];
+  const { xml } = section;
+
+  section.xml = 'herodotus-1-1.xml';
+  section.type = 'alignment';
+
+  const component = (
+    <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const { container, queryByText } = render(component);
+
+  await waitForElementToBeRemoved(() => queryByText('Loading...'));
+
+  expect(container).toMatchSnapshot();
+
+  section.xml = xml;
+  delete section.type;
 });
 
 it('renders a publication group', () => {

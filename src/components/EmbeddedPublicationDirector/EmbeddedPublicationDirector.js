@@ -14,9 +14,20 @@ class EmbeddedPublicationDirector extends Component {
     config.collections.forEach((collection) => {
       (collection.publications || []).forEach((publication) => {
         publication.sections.forEach((section) => {
-          const { path, xml } = section;
+          const {
+            path,
+            xml,
+            type,
+            l1,
+            l2,
+          } = section;
 
-          argsLookup[path] = { xml };
+          argsLookup[path] = {
+            xml,
+            type,
+            l1,
+            l2,
+          };
         });
       });
     });
@@ -33,9 +44,7 @@ class EmbeddedPublicationDirector extends Component {
       return <EmbeddedNotFound config={config} />;
     }
 
-    const { xml } = args;
-
-    return <EmbeddedPublication xml={xml} match={match} location={location} />;
+    return <EmbeddedPublication {...args} match={match} location={location} />;
   }
 }
 

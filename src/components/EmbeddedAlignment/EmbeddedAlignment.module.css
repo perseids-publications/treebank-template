@@ -1,0 +1,41 @@
+.alignmentContainer {
+  margin-bottom: -62px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0.4rem;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.text {
+  font-size: 1.2rem;
+
+  height: 100%;
+  margin-bottom: 0.2rem;
+
+  display: flex;
+  gap: 0.2rem;
+}
+
+.text p {
+
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+}
+
+.segment {
+  flex: 1 1 0;
+  width: 0;
+}
+
+.links {
+  background-color: #f2f2f2;
+}
+
+.links p {
+  text-align: center;
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+}
