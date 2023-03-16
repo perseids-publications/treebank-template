@@ -142,7 +142,6 @@ class Publication extends Component {
               <Alignment
                 xml={xml}
                 chunks={chunks}
-                location={location}
                 match={match}
                 l1={l1}
                 l2={l2}
@@ -199,8 +198,8 @@ Publication.defaultProps = {
   license: undefined,
   notes: undefined,
   type: 'treebank',
-  l1: undefined,
-  l2: undefined,
+  l1: 'L1',
+  l2: 'L2',
 };
 
 export default Publication;

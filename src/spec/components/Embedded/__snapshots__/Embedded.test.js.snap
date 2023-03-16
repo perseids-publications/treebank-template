@@ -31,6 +31,908 @@ exports[`renders 404 when publication not found 1`] = `
 </div>
 `;
 
+exports[`renders an embedded alignment publication 1`] = `
+<div>
+  <div>
+    <div
+      class="alignmentContainer"
+    >
+      <div
+        class="text"
+      >
+        <div
+          class="segment"
+        >
+          <div
+            class="_2vy3L"
+          >
+            <p>
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                Ἡροδότου
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                Ἁλικαρνησσέος
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἱστορίης
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἀπόδεξις
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἥδε
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ὡς
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                μήτε
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                τὰ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                γενόμενα
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἐξ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἀνθρώπων
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                τῷ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                χρόνῳ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἐξίτηλα
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                γένηται
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                μήτε
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἔργα
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                μεγάλα
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                τε
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                καὶ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                θωμαστά
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                τὰ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                μὲν
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                Ἕλλησι
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                τὰ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                δὲ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                βαρβάροισι
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἀποδεχθέντα
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἀκλεᾶ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                γένηται
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                τά
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                τε
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἄλλα
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                καὶ
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                δι᾽
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἣν
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                αἰτίην
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἐπολέμησαν
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ἀλλήλοισι
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                .
+              </span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="segment"
+        >
+          <div
+            class="_2vy3L"
+          >
+            <p>
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                This
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                is
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                the
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                display
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                of
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                the
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                inquiry
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                of
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                Herodotus
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                of
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                Halicarnassus
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                so
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                that
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                things
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                done
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                by
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                man
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                not
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                be
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                forgotten
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                in
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                time
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                and
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                that
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                great
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                and
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                marvelous
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                deeds
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                some
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                displayed
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                by
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                the
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                Hellenes
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                some
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                by
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                the
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                barbarians
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                not
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                lose
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                their
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                glory
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                ,
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                including
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                among
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                others
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                what
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                was
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                the
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                cause
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                of
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                their
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                waging
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                war
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                on
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                each
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                other
+              </span>
+               
+              <span
+                class="_2xbMK"
+                role="button"
+                tabindex="0"
+              >
+                .
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="links"
+      >
+        <p>
+          <a
+            href="https://www.example.com/on-the-murder-of-eratosthenes-1-50/1"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Credits and more information
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`renders an embedded publication 1`] = `
 <div>
   <div>

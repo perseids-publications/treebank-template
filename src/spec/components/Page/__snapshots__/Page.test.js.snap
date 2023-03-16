@@ -1995,9 +1995,7 @@ exports[`renders a publication 1`] = `
         </tr>
       </tbody>
     </table>
-    <div
-      class="treebankWrapper"
-    >
+    <div>
       <div>
         Loading...
       </div>
@@ -2224,9 +2222,7 @@ exports[`renders a publication 2`] = `
         </tr>
       </tbody>
     </table>
-    <div
-      class="treebankWrapper"
-    >
+    <div>
       <nav
         class="navbar navbar-expand navbar-dark bg-dark"
       >
@@ -3786,9 +3782,7 @@ exports[`renders a publication with a numbers array 1`] = `
         </tr>
       </tbody>
     </table>
-    <div
-      class="treebankWrapper"
-    >
+    <div>
       <nav
         class="navbar navbar-expand navbar-dark bg-dark"
       >
@@ -5091,9 +5085,7 @@ exports[`renders a publication with a subdoc 1`] = `
         </tr>
       </tbody>
     </table>
-    <div
-      class="treebankWrapper"
-    >
+    <div>
       <nav
         class="navbar navbar-expand navbar-dark bg-dark"
       >
@@ -6234,9 +6226,7 @@ exports[`renders a publication with highlighted words 1`] = `
         </tr>
       </tbody>
     </table>
-    <div
-      class="treebankWrapper"
-    >
+    <div>
       <nav
         class="navbar navbar-expand navbar-dark bg-dark"
       >
@@ -7379,9 +7369,7 @@ exports[`renders a publication with markdown 1`] = `
         </tr>
       </tbody>
     </table>
-    <div
-      class="treebankWrapper"
-    >
+    <div>
       <nav
         class="navbar navbar-expand navbar-dark bg-dark"
       >
@@ -8678,9 +8666,7 @@ exports[`renders an alignment publication 1`] = `
         </tr>
       </tbody>
     </table>
-    <div
-      class="treebankWrapper"
-    >
+    <div>
       <nav
         class="navbar navbar-expand navbar-dark bg-dark"
       >

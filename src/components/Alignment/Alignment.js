@@ -10,23 +10,17 @@ import {
 } from 'alignment-react';
 import fetch from 'cross-fetch';
 
-import { chunksType, publicationMatchType, locationType } from '../../lib/types';
+import { chunksType, publicationMatchType } from '../../lib/types';
 
 import styles from './Alignment.module.css';
 
 import ControlPanel from '../ControlPanel';
 
-import { parse } from '../../lib/params';
-
 class Alignment extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      loadedXml: false,
-    };
-
-    this.additionalArgs = this.additionalArgs.bind(this);
+    this.state = { loadedXml: false };
   }
 
   componentDidMount() {
@@ -37,12 +31,6 @@ class Alignment extends Component {
       .then((loadedXml) => {
         this.setState({ loadedXml });
       });
-  }
-
-  additionalArgs() {
-    const { location: { search } } = this.props;
-
-    return parse(search);
   }
 
   render() {
@@ -93,15 +81,9 @@ class Alignment extends Component {
 Alignment.propTypes = {
   chunks: chunksType.isRequired,
   match: publicationMatchType.isRequired,
-  location: locationType.isRequired,
   xml: PropTypes.string.isRequired,
-  l1: PropTypes.string,
-  l2: PropTypes.string,
-};
-
-Alignment.defaultProps = {
-  l1: 'L1',
-  l2: 'L2',
+  l1: PropTypes.string.isRequired,
+  l2: PropTypes.string.isRequired,
 };
 
 export default Alignment;
