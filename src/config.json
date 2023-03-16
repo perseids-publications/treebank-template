@@ -26,7 +26,7 @@
               "type": "alignment",
               "l1": "L1",
               "l2": "L2",
-              "chunks": { "start": 1, "end": 3 }
+              "chunks": { "start": 1, "end": 45 }
             },
             {
               "locus": "Chapter 2",
