@@ -137,7 +137,7 @@ class Publication extends Component {
               {!!notes && renderMarkdownRow('Notes', notes)}
             </tbody>
           </table>
-          <div className={styles.treebankWrapper}>
+          <div>
             {type === 'alignment' && (
               <Alignment
                 xml={xml}

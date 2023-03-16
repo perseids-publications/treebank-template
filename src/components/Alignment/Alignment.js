@@ -95,8 +95,13 @@ Alignment.propTypes = {
   match: publicationMatchType.isRequired,
   location: locationType.isRequired,
   xml: PropTypes.string.isRequired,
-  l1: PropTypes.string.isRequired,
-  l2: PropTypes.string.isRequired,
+  l1: PropTypes.string,
+  l2: PropTypes.string,
+};
+
+Alignment.defaultProps = {
+  l1: 'L1',
+  l2: 'L2',
 };
 
 export default Alignment;
