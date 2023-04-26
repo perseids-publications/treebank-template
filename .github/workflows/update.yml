@@ -32,9 +32,9 @@ jobs:
       # Actions that push to GitHub don't currently trigger other actions:
       # https://github.community/t/triggering-a-new-workflow-from-another-workflow/16250
       # For now, manually deploy
-      - uses: actions/setup-node@v2-beta
+      - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Install dependencies
         run: yarn install
