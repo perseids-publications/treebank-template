@@ -29,12 +29,18 @@
     "reactstrap": "^8.5.1",
     "treebank-react": "^2.1.0"
   },
+  "resolutions": {
+    "postcss": "^7.0.36",
+    "postcss-safe-parser": "^4.0.2",
+    "cssnano": "^4.1.11",
+    "postcss-preset-env": "^6.7.0"
+  },
   "scripts": {
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build && cp-cli build/index.html build/404.html",
-    "test": "react-scripts test",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build && cp-cli build/index.html build/404.html",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
     "lint": "eslint --ext=js --ext=jsx .",
     "eject": "react-scripts eject"
   },
