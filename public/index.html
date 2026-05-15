@@ -4,35 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
-    <meta name="description" content="%REACT_APP_DESCRIPTION%">
+    <meta name="description" content="<%= REACT_APP_DESCRIPTION %>">
 
     <!--
       The Open Graph protocol allows links to be expanded by Twitter, Facebook, and other platforms.
       The variables specified here (and in title) are located in .env
     -->
-    <meta property="og:image" content="%REACT_APP_IMAGE_URL%" />
-    <meta property="og:site_name" content="%REACT_APP_SITE_NAME%" />
+    <meta property="og:image" content="<%= REACT_APP_IMAGE_URL %>" />
+    <meta property="og:site_name" content="<%= REACT_APP_SITE_NAME %>" />
     <meta property="og:type" content="object" />
-    <meta property="og:title" content="%REACT_APP_TITLE%" />
-    <meta property="og:description" content="%REACT_APP_DESCRIPTION%" />
-    <meta property="og:url" content="%REACT_APP_URL%" />
+    <meta property="og:title" content="<%= REACT_APP_TITLE %>" />
+    <meta property="og:description" content="<%= REACT_APP_DESCRIPTION %>" />
+    <meta property="og:url" content="<%= REACT_APP_URL %>" />
 
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>%REACT_APP_TITLE%</title>
+    <link rel="manifest" href="<%= assetPrefix %>/manifest.json">
+    <link rel="shortcut icon" href="<%= assetPrefix %>/favicon.ico">
+    <title><%= REACT_APP_TITLE %></title>
   </head>
   <body>
     <noscript>

@@ -10,8 +10,8 @@ import alignments from '../../alignments.test.json';
 
 import Embedded from '../../../components/Embedded';
 
-jest.mock('treebank-react');
-jest.mock('alpheios-messaging');
+rstest.mock('treebank-react');
+rstest.mock('alpheios-messaging');
 
 const server = setupServer(
   rest.get(`${process.env.PUBLIC_URL}/xml/lysias-1-1-50.xml`, (req, res, ctx) => (
