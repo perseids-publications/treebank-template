@@ -1,9 +1,15 @@
 import { defineConfig, loadEnv } from '@rsbuild/core';
 import { pluginReact } from '@rsbuild/plugin-react';
 import { pluginNodePolyfill } from '@rsbuild/plugin-node-polyfill';
+import pkg from './package.json';
 
 const { publicVars, rawPublicVars } = loadEnv({ prefixes: ['REACT_APP_'] });
-const publicUrl = process.env.PUBLIC_URL || '';
+
+// Create React App pulled the root URL from package.json
+// We need to replicate this behavior for backwards compatibility
+const publicUrl = pkg.homepage.startsWith('http')
+  ? new URL(pkg.homepage).pathname.replace(/\/$/, '')
+  : pkg.homepage.replace(/\/$/, '');
 
 export default defineConfig({
   plugins: [
