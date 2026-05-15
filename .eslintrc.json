@@ -1,6 +1,5 @@
 {
   "extends": "airbnb",
-  "parser": "babel-eslint",
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "react/jsx-props-no-spreading": 0,
@@ -25,7 +24,14 @@
         "react/prop-types": [0]
       },
       "globals": {
-        "window": true
+        "window": true,
+        "rstest": true
+      }
+    },
+    {
+      "files": ["rsbuild.config.js", "rstest.config.js"],
+      "rules": {
+        "import/no-unresolved": "off"
       }
     }
   ]

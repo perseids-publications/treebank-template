@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Rstest Snapshot v1
 
 exports[`does not render a publication that is hidden 1`] = `
 <div>
@@ -19,7 +19,7 @@ exports[`does not render a publication that is hidden 1`] = `
     Treebank Publication Template
   </header>
   <div
-    class="jumbotron jumbotron-fluid bg-dark jumbotronSmall"
+    class="jumbotron jumbotron-fluid bg-dark src-components-Hero-Hero-module__jumbotronSmall-Htlofx"
   >
     <div
       class="container text-light"
@@ -35,7 +35,7 @@ exports[`does not render a publication that is hidden 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -68,7 +68,7 @@ exports[`does not render a publication that is hidden 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -147,7 +147,7 @@ exports[`does not render a publication that is hidden 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-murder-of-eratosthenes-1-50/1"
@@ -163,7 +163,7 @@ exports[`does not render a publication that is hidden 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -242,7 +242,7 @@ exports[`does not render a publication that is hidden 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/histories-40-59/1"
@@ -305,7 +305,7 @@ exports[`does not render a publication that is hidden 1`] = `
                 </ul>
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/philippic-1-51/1"
@@ -410,7 +410,7 @@ exports[`does not render collections that are hidden 1`] = `
     Treebank Publication Template
   </header>
   <div
-    class="jumbotron jumbotron-fluid bg-dark jumbotronSmall"
+    class="jumbotron jumbotron-fluid bg-dark src-components-Hero-Hero-module__jumbotronSmall-Htlofx"
   >
     <div
       class="container text-light"
@@ -426,7 +426,7 @@ exports[`does not render collections that are hidden 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -459,7 +459,7 @@ exports[`does not render collections that are hidden 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -538,7 +538,7 @@ exports[`does not render collections that are hidden 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/histories-40-59/1"
@@ -601,7 +601,7 @@ exports[`does not render collections that are hidden 1`] = `
                 </ul>
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/philippic-1-51/1"
@@ -1436,7 +1436,7 @@ exports[`renders a link to the full publication when publication is collapsed 1`
     Treebank Publication Template
   </header>
   <div
-    class="jumbotron jumbotron-fluid bg-dark jumbotronSmall"
+    class="jumbotron jumbotron-fluid bg-dark src-components-Hero-Hero-module__jumbotronSmall-Htlofx"
   >
     <div
       class="container text-light"
@@ -1452,7 +1452,7 @@ exports[`renders a link to the full publication when publication is collapsed 1`
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -1485,7 +1485,7 @@ exports[`renders a link to the full publication when publication is collapsed 1`
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -1564,7 +1564,7 @@ exports[`renders a link to the full publication when publication is collapsed 1`
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-murder-of-eratosthenes"
@@ -1606,7 +1606,7 @@ exports[`renders a link to the full publication when publication is collapsed 1`
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-crown-1-50/1"
@@ -1628,7 +1628,7 @@ exports[`renders a link to the full publication when publication is collapsed 1`
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -1707,7 +1707,7 @@ exports[`renders a link to the full publication when publication is collapsed 1`
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/histories-40-59/1"
@@ -1770,7 +1770,7 @@ exports[`renders a link to the full publication when publication is collapsed 1`
                 </ul>
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/philippic-1-51/1"
@@ -1918,7 +1918,7 @@ exports[`renders a publication 1`] = `
             Author
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Lysias
           </td>
@@ -1930,7 +1930,7 @@ exports[`renders a publication 1`] = `
             Work
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             On the Murder of Eratosthenes
           </td>
@@ -1942,7 +1942,7 @@ exports[`renders a publication 1`] = `
             Locus
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             1-50
              
@@ -1960,7 +1960,7 @@ exports[`renders a publication 1`] = `
             Editors
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Vanessa Gorman
           </td>
@@ -1986,7 +1986,7 @@ exports[`renders a publication 1`] = `
             Notes
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -2145,7 +2145,7 @@ exports[`renders a publication 2`] = `
             Author
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Lysias
           </td>
@@ -2157,7 +2157,7 @@ exports[`renders a publication 2`] = `
             Work
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             On the Murder of Eratosthenes
           </td>
@@ -2169,7 +2169,7 @@ exports[`renders a publication 2`] = `
             Locus
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             1-50
              
@@ -2187,7 +2187,7 @@ exports[`renders a publication 2`] = `
             Editors
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Vanessa Gorman
           </td>
@@ -2213,7 +2213,7 @@ exports[`renders a publication 2`] = `
             Notes
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -2237,7 +2237,7 @@ exports[`renders a publication 2`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/1"
               >
                 « First
@@ -2247,7 +2247,7 @@ exports[`renders a publication 2`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/1"
               >
                 ‹ Back
@@ -2259,13 +2259,13 @@ exports[`renders a publication 2`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="btn btn-link nav-link text-light dropdown-toggle dropdownButton"
+                class="btn btn-link nav-link text-light dropdown-toggle src-components-ControlPanel-ControlPanel-module__dropdownButton-XOmREz"
                 type="button"
               >
                 1
               </button>
               <div
-                class="dropdown-menu dropdownScroll "
+                class="dropdown-menu src-components-ControlPanel-ControlPanel-module__dropdownScroll-l59gFU "
               >
                 <a
                   class="dropdown-item"
@@ -3077,7 +3077,7 @@ exports[`renders a publication 2`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/2"
               >
                 Next ›
@@ -3087,7 +3087,7 @@ exports[`renders a publication 2`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/134"
               >
                 Last »
@@ -3100,7 +3100,7 @@ exports[`renders a publication 2`] = `
         class="mb-4"
       >
         <div
-          class="text"
+          class="src-components-Treebank-Treebank-module__text-g_IFk4"
         >
           <div
             data-highlight=""
@@ -3111,7 +3111,7 @@ exports[`renders a publication 2`] = `
           </div>
         </div>
         <div
-          class="graph"
+          class="src-components-Treebank-Treebank-module__graph-Ohe6vs"
         >
           <div
             data-highlight=""
@@ -3257,7 +3257,7 @@ exports[`renders a publication group 1`] = `
     </ul>
   </header>
   <div
-    class="jumbotron jumbotron-fluid bg-dark jumbotronSmall"
+    class="jumbotron jumbotron-fluid bg-dark src-components-Hero-Hero-module__jumbotronSmall-Htlofx"
   >
     <div
       class="container text-light"
@@ -3273,7 +3273,7 @@ exports[`renders a publication group 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -3357,7 +3357,7 @@ exports[`renders a publication group 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-murder-of-eratosthenes-1-50/1"
@@ -3476,7 +3476,7 @@ exports[`renders a publication group when a publication is collapsed 1`] = `
     </ul>
   </header>
   <div
-    class="jumbotron jumbotron-fluid bg-dark jumbotronSmall"
+    class="jumbotron jumbotron-fluid bg-dark src-components-Hero-Hero-module__jumbotronSmall-Htlofx"
   >
     <div
       class="container text-light"
@@ -3492,7 +3492,7 @@ exports[`renders a publication group when a publication is collapsed 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -3576,7 +3576,7 @@ exports[`renders a publication group when a publication is collapsed 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-murder-of-eratosthenes-1-50/1"
@@ -3724,7 +3724,7 @@ exports[`renders a publication with a numbers array 1`] = `
             Author
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Demosthenes
           </td>
@@ -3736,7 +3736,7 @@ exports[`renders a publication with a numbers array 1`] = `
             Work
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Philippic 1
           </td>
@@ -3748,7 +3748,7 @@ exports[`renders a publication with a numbers array 1`] = `
             Locus
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             1-51
              
@@ -3766,7 +3766,7 @@ exports[`renders a publication with a numbers array 1`] = `
             Editors
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             <div>
               <span>
@@ -3797,7 +3797,7 @@ exports[`renders a publication with a numbers array 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/philippic-1-51/1"
               >
                 « First
@@ -3807,7 +3807,7 @@ exports[`renders a publication with a numbers array 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/philippic-1-51/1"
               >
                 ‹ Back
@@ -3819,13 +3819,13 @@ exports[`renders a publication with a numbers array 1`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="btn btn-link nav-link text-light dropdown-toggle dropdownButton"
+                class="btn btn-link nav-link text-light dropdown-toggle src-components-ControlPanel-ControlPanel-module__dropdownButton-XOmREz"
                 type="button"
               >
                 1
               </button>
               <div
-                class="dropdown-menu dropdownScroll "
+                class="dropdown-menu src-components-ControlPanel-ControlPanel-module__dropdownScroll-l59gFU "
               >
                 <a
                   class="dropdown-item"
@@ -4787,7 +4787,7 @@ exports[`renders a publication with a numbers array 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/philippic-1-51/2"
               >
                 Next ›
@@ -4797,7 +4797,7 @@ exports[`renders a publication with a numbers array 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/philippic-1-51/159"
               >
                 Last »
@@ -4810,7 +4810,7 @@ exports[`renders a publication with a numbers array 1`] = `
         class="mb-4"
       >
         <div
-          class="text"
+          class="src-components-Treebank-Treebank-module__text-g_IFk4"
         >
           <div
             data-highlight=""
@@ -4821,7 +4821,7 @@ exports[`renders a publication with a numbers array 1`] = `
           </div>
         </div>
         <div
-          class="graph"
+          class="src-components-Treebank-Treebank-module__graph-Ohe6vs"
         >
           <div
             data-highlight=""
@@ -4996,7 +4996,7 @@ exports[`renders a publication with a subdoc 1`] = `
             Author
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Lysias
           </td>
@@ -5008,7 +5008,7 @@ exports[`renders a publication with a subdoc 1`] = `
             Work
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             On the Murder of Eratosthenes
           </td>
@@ -5020,7 +5020,7 @@ exports[`renders a publication with a subdoc 1`] = `
             Locus
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             1-50
              
@@ -5038,7 +5038,7 @@ exports[`renders a publication with a subdoc 1`] = `
             Reference
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             example-subdoc
           </td>
@@ -5050,7 +5050,7 @@ exports[`renders a publication with a subdoc 1`] = `
             Editors
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Vanessa Gorman
           </td>
@@ -5076,7 +5076,7 @@ exports[`renders a publication with a subdoc 1`] = `
             Notes
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -5100,7 +5100,7 @@ exports[`renders a publication with a subdoc 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/1"
               >
                 « First
@@ -5110,7 +5110,7 @@ exports[`renders a publication with a subdoc 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/1"
               >
                 ‹ Back
@@ -5122,13 +5122,13 @@ exports[`renders a publication with a subdoc 1`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="btn btn-link nav-link text-light dropdown-toggle dropdownButton"
+                class="btn btn-link nav-link text-light dropdown-toggle src-components-ControlPanel-ControlPanel-module__dropdownButton-XOmREz"
                 type="button"
               >
                 1
               </button>
               <div
-                class="dropdown-menu dropdownScroll "
+                class="dropdown-menu src-components-ControlPanel-ControlPanel-module__dropdownScroll-l59gFU "
               >
                 <a
                   class="dropdown-item"
@@ -5940,7 +5940,7 @@ exports[`renders a publication with a subdoc 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/2"
               >
                 Next ›
@@ -5950,7 +5950,7 @@ exports[`renders a publication with a subdoc 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/134"
               >
                 Last »
@@ -5963,7 +5963,7 @@ exports[`renders a publication with a subdoc 1`] = `
         class="mb-4"
       >
         <div
-          class="text"
+          class="src-components-Treebank-Treebank-module__text-g_IFk4"
         >
           <div
             data-highlight=""
@@ -5974,7 +5974,7 @@ exports[`renders a publication with a subdoc 1`] = `
           </div>
         </div>
         <div
-          class="graph"
+          class="src-components-Treebank-Treebank-module__graph-Ohe6vs"
         >
           <div
             data-highlight=""
@@ -6149,7 +6149,7 @@ exports[`renders a publication with highlighted words 1`] = `
             Author
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Lysias
           </td>
@@ -6161,7 +6161,7 @@ exports[`renders a publication with highlighted words 1`] = `
             Work
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             On the Murder of Eratosthenes
           </td>
@@ -6173,7 +6173,7 @@ exports[`renders a publication with highlighted words 1`] = `
             Locus
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             1-50
              
@@ -6191,7 +6191,7 @@ exports[`renders a publication with highlighted words 1`] = `
             Editors
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Vanessa Gorman
           </td>
@@ -6217,7 +6217,7 @@ exports[`renders a publication with highlighted words 1`] = `
             Notes
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -6241,7 +6241,7 @@ exports[`renders a publication with highlighted words 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/1"
               >
                 « First
@@ -6251,7 +6251,7 @@ exports[`renders a publication with highlighted words 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/1"
               >
                 ‹ Back
@@ -6263,13 +6263,13 @@ exports[`renders a publication with highlighted words 1`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="btn btn-link nav-link text-light dropdown-toggle dropdownButton"
+                class="btn btn-link nav-link text-light dropdown-toggle src-components-ControlPanel-ControlPanel-module__dropdownButton-XOmREz"
                 type="button"
               >
                 1
               </button>
               <div
-                class="dropdown-menu dropdownScroll "
+                class="dropdown-menu src-components-ControlPanel-ControlPanel-module__dropdownScroll-l59gFU "
               >
                 <a
                   class="dropdown-item"
@@ -7081,7 +7081,7 @@ exports[`renders a publication with highlighted words 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/2"
               >
                 Next ›
@@ -7091,7 +7091,7 @@ exports[`renders a publication with highlighted words 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/134"
               >
                 Last »
@@ -7104,7 +7104,7 @@ exports[`renders a publication with highlighted words 1`] = `
         class="mb-4"
       >
         <div
-          class="text"
+          class="src-components-Treebank-Treebank-module__text-g_IFk4"
         >
           <div
             data-highlight="2,3"
@@ -7115,7 +7115,7 @@ exports[`renders a publication with highlighted words 1`] = `
           </div>
         </div>
         <div
-          class="graph"
+          class="src-components-Treebank-Treebank-module__graph-Ohe6vs"
         >
           <div
             data-highlight="2,3"
@@ -7290,7 +7290,7 @@ exports[`renders a publication with markdown 1`] = `
             Author
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Demosthenes
           </td>
@@ -7302,7 +7302,7 @@ exports[`renders a publication with markdown 1`] = `
             Work
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             On the Crown
           </td>
@@ -7314,7 +7314,7 @@ exports[`renders a publication with markdown 1`] = `
             Locus
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             1-50
              
@@ -7332,7 +7332,7 @@ exports[`renders a publication with markdown 1`] = `
             Editors
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Vanessa Gorman
           </td>
@@ -7344,7 +7344,7 @@ exports[`renders a publication with markdown 1`] = `
             License
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             CC BY-SA 4.0
           </td>
@@ -7356,7 +7356,7 @@ exports[`renders a publication with markdown 1`] = `
             Notes
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             <p>
               Lorem ipsum dolor sit amet, 
@@ -7384,7 +7384,7 @@ exports[`renders a publication with markdown 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-crown-1-50/1"
               >
                 « First
@@ -7394,7 +7394,7 @@ exports[`renders a publication with markdown 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-crown-1-50/1"
               >
                 ‹ Back
@@ -7406,13 +7406,13 @@ exports[`renders a publication with markdown 1`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="btn btn-link nav-link text-light dropdown-toggle dropdownButton"
+                class="btn btn-link nav-link text-light dropdown-toggle src-components-ControlPanel-ControlPanel-module__dropdownButton-XOmREz"
                 type="button"
               >
                 1
               </button>
               <div
-                class="dropdown-menu dropdownScroll "
+                class="dropdown-menu src-components-ControlPanel-ControlPanel-module__dropdownScroll-l59gFU "
               >
                 <a
                   class="dropdown-item"
@@ -8380,7 +8380,7 @@ exports[`renders a publication with markdown 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-crown-1-50/2"
               >
                 Next ›
@@ -8390,7 +8390,7 @@ exports[`renders a publication with markdown 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-crown-1-50/160"
               >
                 Last »
@@ -8403,7 +8403,7 @@ exports[`renders a publication with markdown 1`] = `
         class="mb-4"
       >
         <div
-          class="text"
+          class="src-components-Treebank-Treebank-module__text-g_IFk4"
         >
           <div
             data-highlight=""
@@ -8414,7 +8414,7 @@ exports[`renders a publication with markdown 1`] = `
           </div>
         </div>
         <div
-          class="graph"
+          class="src-components-Treebank-Treebank-module__graph-Ohe6vs"
         >
           <div
             data-highlight=""
@@ -8589,7 +8589,7 @@ exports[`renders an alignment publication 1`] = `
             Author
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Lysias
           </td>
@@ -8601,7 +8601,7 @@ exports[`renders an alignment publication 1`] = `
             Work
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             On the Murder of Eratosthenes
           </td>
@@ -8613,7 +8613,7 @@ exports[`renders an alignment publication 1`] = `
             Locus
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             1-50
              
@@ -8631,7 +8631,7 @@ exports[`renders an alignment publication 1`] = `
             Editors
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             Vanessa Gorman
           </td>
@@ -8657,7 +8657,7 @@ exports[`renders an alignment publication 1`] = `
             Notes
           </th>
           <td
-            class="publicationRow"
+            class="src-components-Publication-Publication-module__publicationRow-g5tLAK"
           >
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -8681,7 +8681,7 @@ exports[`renders an alignment publication 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/1"
               >
                 « First
@@ -8691,7 +8691,7 @@ exports[`renders an alignment publication 1`] = `
               class="nav-item invisible"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/1"
               >
                 ‹ Back
@@ -8703,13 +8703,13 @@ exports[`renders an alignment publication 1`] = `
               <button
                 aria-expanded="false"
                 aria-haspopup="true"
-                class="btn btn-link nav-link text-light dropdown-toggle dropdownButton"
+                class="btn btn-link nav-link text-light dropdown-toggle src-components-ControlPanel-ControlPanel-module__dropdownButton-XOmREz"
                 type="button"
               >
                 1
               </button>
               <div
-                class="dropdown-menu dropdownScroll "
+                class="dropdown-menu src-components-ControlPanel-ControlPanel-module__dropdownScroll-l59gFU "
               >
                 <a
                   class="dropdown-item"
@@ -9521,7 +9521,7 @@ exports[`renders an alignment publication 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/2"
               >
                 Next ›
@@ -9531,7 +9531,7 @@ exports[`renders an alignment publication 1`] = `
               class="nav-item"
             >
               <a
-                class="nav-link text-light link"
+                class="nav-link text-light src-components-ControlPanel-ControlPanel-module__link-NTjzGh"
                 href="/on-the-murder-of-eratosthenes-1-50/134"
               >
                 Last »
@@ -9544,10 +9544,10 @@ exports[`renders an alignment publication 1`] = `
         class="mb-4"
       >
         <div
-          class="text"
+          class="src-components-Alignment-Alignment-module__text-flxIv4"
         >
           <div
-            class="segment"
+            class="src-components-Alignment-Alignment-module__segment-aLAQn2"
           >
             <div
               class="_2vy3L"
@@ -9916,7 +9916,7 @@ exports[`renders an alignment publication 1`] = `
             </div>
           </div>
           <div
-            class="segment"
+            class="src-components-Alignment-Alignment-module__segment-aLAQn2"
           >
             <div
               class="_2vy3L"
@@ -10741,7 +10741,7 @@ exports[`renders the doi page 1`] = `
     </div>
   </header>
   <div
-    class="container pt-3 pb-4 instructions"
+    class="container pt-3 pb-4 src-components-Instructions-Instructions-module__instructions-zSxC0U"
   >
     <div
       class="row"
@@ -10756,14 +10756,14 @@ exports[`renders the doi page 1`] = `
           If you have a DOI for your data, you can reference it easily in the treebank template repository's metadata. This will add a DOI link to the bottom of the repository's home page.
         </p>
         <a
-          href="doi.png"
+          href="static/image/doi.0e060726c9.png"
           rel="noopener noreferrer"
           target="_blank"
         >
           <img
             alt="footer of Treebank Template showing DOI"
             class="img-fluid img-thumbnail mt-0"
-            src="doi.png"
+            src="static/image/doi.0e060726c9.png"
           />
         </a>
         <p>
@@ -10811,14 +10811,14 @@ exports[`renders the doi page 1`] = `
                      
                     button.
                     <a
-                      href="zenodo-home.png"
+                      href="static/image/zenodo-home.fc78c5fbec.png"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <img
                         alt="Zenodo home page"
                         class="img-fluid img-thumbnail"
-                        src="zenodo-home.png"
+                        src="static/image/zenodo-home.fc78c5fbec.png"
                       />
                     </a>
                   </li>
@@ -10830,14 +10830,14 @@ exports[`renders the doi page 1`] = `
                     </code>
                     .
                     <a
-                      href="zenodo-login.png"
+                      href="static/image/zenodo-login.2ff37bdefe.png"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <img
                         alt="Zenodo login page"
                         class="img-fluid img-thumbnail"
-                        src="zenodo-login.png"
+                        src="static/image/zenodo-login.2ff37bdefe.png"
                       />
                     </a>
                   </li>
@@ -10850,14 +10850,14 @@ exports[`renders the doi page 1`] = `
                      
                     button.
                     <a
-                      href="zenodo-authorize.png"
+                      href="static/image/zenodo-authorize.319389b827.png"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <img
                         alt="Zenodo GitHub authorization page"
                         class="img-fluid img-thumbnail"
-                        src="zenodo-authorize.png"
+                        src="static/image/zenodo-authorize.319389b827.png"
                       />
                     </a>
                   </li>
@@ -10880,14 +10880,14 @@ exports[`renders the doi page 1`] = `
                     </code>
                     .
                     <a
-                      href="zenodo-dropdown.png"
+                      href="static/image/zenodo-dropdown.c163fd65ad.png"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <img
                         alt="Zenodo home page with drop-down menu expanded"
                         class="img-fluid img-thumbnail"
-                        src="zenodo-dropdown.png"
+                        src="static/image/zenodo-dropdown.c163fd65ad.png"
                       />
                     </a>
                   </li>
@@ -10899,14 +10899,14 @@ exports[`renders the doi page 1`] = `
                     </code>
                     .
                     <a
-                      href="zenodo-connect.png"
+                      href="static/image/zenodo-connect.e7b5c2135e.png"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <img
                         alt="Zenodo settings page GitHub tab when GitHub integration is not set up"
                         class="img-fluid img-thumbnail"
-                        src="zenodo-connect.png"
+                        src="static/image/zenodo-connect.e7b5c2135e.png"
                       />
                     </a>
                   </li>
@@ -10919,14 +10919,14 @@ exports[`renders the doi page 1`] = `
                      
                     button.
                     <a
-                      href="zenodo-authorize.png"
+                      href="static/image/zenodo-authorize.319389b827.png"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
                       <img
                         alt="Zenodo GitHub authorization page"
                         class="img-fluid img-thumbnail"
-                        src="zenodo-authorize.png"
+                        src="static/image/zenodo-authorize.319389b827.png"
                       />
                     </a>
                   </li>
@@ -10947,28 +10947,28 @@ exports[`renders the doi page 1`] = `
                 </code>
                 .
                 <a
-                  href="zenodo-dropdown.png"
+                  href="static/image/zenodo-dropdown.c163fd65ad.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="Zenodo home page with drop-down menu expanded"
                     class="img-fluid img-thumbnail"
-                    src="zenodo-dropdown.png"
+                    src="static/image/zenodo-dropdown.c163fd65ad.png"
                   />
                 </a>
               </li>
               <li>
                 Flip the switch for the repository you want to create a DOI for.
                 <a
-                  href="zenodo-switch.png"
+                  href="static/image/zenodo-switch.46f432a1bf.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="Zenodo settings page GitHub tab when GitHub integration is set up"
                     class="img-fluid img-thumbnail"
-                    src="zenodo-switch.png"
+                    src="static/image/zenodo-switch.46f432a1bf.png"
                   />
                 </a>
               </li>
@@ -10988,14 +10988,14 @@ exports[`renders the doi page 1`] = `
                  
                 tab.
                 <a
-                  href="github-select-actions.png"
+                  href="static/image/github-select-actions.07584834d7.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub repository with arrow pointing to actions tab"
                     class="img-fluid img-thumbnail"
-                    src="github-select-actions.png"
+                    src="static/image/github-select-actions.07584834d7.png"
                   />
                 </a>
               </li>
@@ -11008,14 +11008,14 @@ exports[`renders the doi page 1`] = `
                  
                 workflow from the workflow list. (Every time this workflow is run, it archives the code in the GitHub repository using Zenodo.)
                 <a
-                  href="github-select-release.png"
+                  href="static/image/github-select-release.a200232d2e.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub actions page"
                     class="img-fluid img-thumbnail"
-                    src="github-select-release.png"
+                    src="static/image/github-select-release.a200232d2e.png"
                   />
                 </a>
               </li>
@@ -11028,14 +11028,14 @@ exports[`renders the doi page 1`] = `
                  
                 drop-down menu.
                 <a
-                  href="github-run-workflow.png"
+                  href="static/image/github-run-workflow.43c25fa3ea.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="release workflow page with Run workflow drop-down menu selected"
                     class="img-fluid img-thumbnail"
-                    src="github-run-workflow.png"
+                    src="static/image/github-run-workflow.43c25fa3ea.png"
                   />
                 </a>
               </li>
@@ -11126,14 +11126,14 @@ exports[`renders the doi page 1`] = `
                  
                 button. The release workflow will now run. When it is complete, the code will be published and archived with Zenodo.
                 <a
-                  href="github-workflow-inputs.png"
+                  href="static/image/github-workflow-inputs.2cc7ccd21b.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="release workflow page with Run workflow drop-down menu selected"
                     class="img-fluid img-thumbnail"
-                    src="github-workflow-inputs.png"
+                    src="static/image/github-workflow-inputs.2cc7ccd21b.png"
                   />
                 </a>
               </li>
@@ -11152,28 +11152,28 @@ exports[`renders the doi page 1`] = `
                 </code>
                 . You should now see your repository.
                 <a
-                  href="zenodo-select-upload.png"
+                  href="static/image/zenodo-select-upload.87aa4638b8.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="Zenodo home page with arrow pointing to Upload button"
                     class="img-fluid img-thumbnail"
-                    src="zenodo-select-upload.png"
+                    src="static/image/zenodo-select-upload.87aa4638b8.png"
                   />
                 </a>
               </li>
               <li>
                 Click on the repository in Zenodo.
                 <a
-                  href="zenodo-upload-list.png"
+                  href="static/image/zenodo-upload-list.5945ded6ba.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="Zenodo list of uploads"
                     class="img-fluid img-thumbnail"
-                    src="zenodo-upload-list.png"
+                    src="static/image/zenodo-upload-list.5945ded6ba.png"
                   />
                 </a>
               </li>
@@ -11185,14 +11185,14 @@ exports[`renders the doi page 1`] = `
                 </b>
                 . (Note that there are multiple DOIs because Zenodo creates a DOI for each release. You specifically want to copy the one for all versions.)
                 <a
-                  href="zenodo-upload.png"
+                  href="static/image/zenodo-upload.5f8d37d5c8.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="Zenodo upload with arrow pointing to DOI for all versions section"
                     class="img-fluid img-thumbnail"
-                    src="zenodo-upload.png"
+                    src="static/image/zenodo-upload.5f8d37d5c8.png"
                   />
                 </a>
               </li>
@@ -11225,14 +11225,14 @@ exports[`renders the doi page 1`] = `
                 </code>
                 .
                 <a
-                  href="github-edit-file.png"
+                  href="static/image/github-edit-file.de7ff25b38.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="File open in GitHub"
                     class="img-fluid img-thumbnail"
-                    src="github-edit-file.png"
+                    src="static/image/github-edit-file.de7ff25b38.png"
                   />
                 </a>
               </li>
@@ -11245,14 +11245,14 @@ exports[`renders the doi page 1`] = `
                  
                 field with your newly reserved DOI.
                 <a
-                  href="github-visual-editor.png"
+                  href="static/image/github-visual-editor.7d320f9b94.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub visual editor editing config.json"
                     class="img-fluid img-thumbnail"
-                    src="github-visual-editor.png"
+                    src="static/image/github-visual-editor.7d320f9b94.png"
                   />
                 </a>
               </li>
@@ -11358,7 +11358,7 @@ exports[`renders the footer with a doi 1`] = `
     Treebank Publication Template
   </header>
   <div
-    class="jumbotron jumbotron-fluid bg-dark jumbotronSmall"
+    class="jumbotron jumbotron-fluid bg-dark src-components-Hero-Hero-module__jumbotronSmall-Htlofx"
   >
     <div
       class="container text-light"
@@ -11374,7 +11374,7 @@ exports[`renders the footer with a doi 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -11407,7 +11407,7 @@ exports[`renders the footer with a doi 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -11486,7 +11486,7 @@ exports[`renders the footer with a doi 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-murder-of-eratosthenes-1-50/1"
@@ -11528,7 +11528,7 @@ exports[`renders the footer with a doi 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-crown-1-50/1"
@@ -11550,7 +11550,7 @@ exports[`renders the footer with a doi 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -11629,7 +11629,7 @@ exports[`renders the footer with a doi 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/histories-40-59/1"
@@ -11692,7 +11692,7 @@ exports[`renders the footer with a doi 1`] = `
                 </ul>
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/philippic-1-51/1"
@@ -11876,7 +11876,7 @@ exports[`renders the getting started page 1`] = `
     </div>
   </header>
   <div
-    class="container pt-3 pb-4 instructions"
+    class="container pt-3 pb-4 src-components-Instructions-Instructions-module__instructions-zSxC0U"
   >
     <div
       class="row"
@@ -11982,9 +11982,7 @@ exports[`renders the getting started page 1`] = `
         <h2>
           Instructions
         </h2>
-        <ol
-          class="list"
-        >
+        <ol>
           <li>
             <strong>
               Fork the base Repository
@@ -12023,14 +12021,14 @@ exports[`renders the getting started page 1`] = `
                  
                 button.
                 <a
-                  href="fork.png"
+                  href="static/image/fork.632a855324.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="arrow pointing to fork button on GitHub page"
                     class="img-fluid img-thumbnail"
-                    src="fork.png"
+                    src="static/image/fork.632a855324.png"
                   />
                 </a>
                 This puts a copy of the treebank-template repository into your own GitHub account.
@@ -12050,14 +12048,14 @@ exports[`renders the getting started page 1`] = `
                 </code>
                 .
                 <a
-                  href="forked.png"
+                  href="static/image/forked.d685fe69a4.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub page of repository after successful fork"
                     class="img-fluid img-thumbnail"
-                    src="forked.png"
+                    src="static/image/forked.d685fe69a4.png"
                   />
                 </a>
               </li>
@@ -12078,14 +12076,14 @@ exports[`renders the getting started page 1`] = `
                 </code>
                 .
                 <a
-                  href="actions-enable.png"
+                  href="static/image/actions-enable.1c23b58595.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="arrow pointing to the button on GitHub to enable Actions"
                     class="img-fluid img-thumbnail"
-                    src="actions-enable.png"
+                    src="static/image/actions-enable.1c23b58595.png"
                   />
                 </a>
                 This step is necessary in order for GitHub to update your GitHub Pages site automatically whenever you update or add files to your repository. For more information on GitHub actions see
@@ -12115,14 +12113,14 @@ exports[`renders the getting started page 1`] = `
                  
                 file in the root directory of the repository.
                 <a
-                  href="package.png"
+                  href="static/image/package.a58045f04b.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="arrow pointing to package.json file on repository page on GitHub"
                     class="img-fluid img-thumbnail"
-                    src="package.png"
+                    src="static/image/package.a58045f04b.png"
                   />
                 </a>
               </li>
@@ -12135,14 +12133,14 @@ exports[`renders the getting started page 1`] = `
                  
                 icon.
                 <a
-                  href="edit.png"
+                  href="static/image/edit.b011fec499.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="arrow pointing to GitHub's edit button"
                     class="img-fluid img-thumbnail"
-                    src="edit.png"
+                    src="static/image/edit.b011fec499.png"
                   />
                 </a>
               </li>
@@ -12171,14 +12169,14 @@ exports[`renders the getting started page 1`] = `
                 </code>
                 .
                 <a
-                  href="homepage.png"
+                  href="static/image/homepage.dd977c559e.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub's visual editor with homepage line highlighted"
                     class="img-fluid img-thumbnail"
-                    src="homepage.png"
+                    src="static/image/homepage.dd977c559e.png"
                   />
                 </a>
               </li>
@@ -12200,14 +12198,14 @@ exports[`renders the getting started page 1`] = `
                  
                 is selected.
                 <a
-                  href="commit.png"
+                  href="static/image/commit.617b42d518.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub page for creating a manual commit with arrow pointing to commit option"
                     class="img-fluid img-thumbnail"
-                    src="commit.png"
+                    src="static/image/commit.617b42d518.png"
                   />
                 </a>
               </li>
@@ -12235,14 +12233,14 @@ exports[`renders the getting started page 1`] = `
                  
                 button.
                 <a
-                  href="settings.png"
+                  href="static/image/settings.ec77798a29.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub settings page"
                     class="img-fluid img-thumbnail"
-                    src="settings.png"
+                    src="static/image/settings.ec77798a29.png"
                   />
                 </a>
               </li>
@@ -12286,14 +12284,14 @@ exports[`renders the getting started page 1`] = `
                 </code>
                 .
                 <a
-                  href="ghpages.png"
+                  href="static/image/ghpages.415f923003.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub pages section of GitHub repository settings"
                     class="img-fluid img-thumbnail"
-                    src="ghpages.png"
+                    src="static/image/ghpages.415f923003.png"
                   />
                 </a>
               </li>
@@ -12325,14 +12323,14 @@ exports[`renders the getting started page 1`] = `
                  
                 file.
                 <a
-                  href="config.png"
+                  href="static/image/config.7ea813c00e.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub repository with arrow pointing to config.json file"
                     class="img-fluid img-thumbnail"
-                    src="config.png"
+                    src="static/image/config.7ea813c00e.png"
                   />
                 </a>
               </li>
@@ -12427,14 +12425,14 @@ exports[`renders the getting started page 1`] = `
                   </li>
                 </ul>
                 <a
-                  href="config-edit.png"
+                  href="static/image/config-edit.41193fafcb.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub visual editor editing package.json"
                     class="img-fluid img-thumbnail"
-                    src="config-edit.png"
+                    src="static/image/config-edit.41193fafcb.png"
                   />
                 </a>
               </li>
@@ -12461,14 +12459,14 @@ exports[`renders the getting started page 1`] = `
                  
                 is selected.
                 <a
-                  href="commit.png"
+                  href="static/image/commit.617b42d518.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub page for creating a manual commit with arrow pointing to commit option"
                     class="img-fluid img-thumbnail"
-                    src="commit.png"
+                    src="static/image/commit.617b42d518.png"
                   />
                 </a>
               </li>
@@ -12484,28 +12482,28 @@ exports[`renders the getting started page 1`] = `
               <li>
                 You should see that your build workflow is in progress.
                 <a
-                  href="progress.png"
+                  href="static/image/progress.030dddc014.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub build workflow in progress"
                     class="img-fluid img-thumbnail"
-                    src="progress.png"
+                    src="static/image/progress.030dddc014.png"
                   />
                 </a>
               </li>
               <li>
                 And finally that it succeeds.
                 <a
-                  href="success.png"
+                  href="static/image/success.6d0cce3084.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub build workflow success"
                     class="img-fluid img-thumbnail"
-                    src="success.png"
+                    src="static/image/success.6d0cce3084.png"
                   />
                 </a>
               </li>
@@ -12517,14 +12515,14 @@ exports[`renders the getting started page 1`] = `
                 </code>
                 .
                 <a
-                  href="site.png"
+                  href="static/image/site.601cf12495.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="published site based off of the Treebank Template"
                     class="img-fluid img-thumbnail"
-                    src="site.png"
+                    src="static/image/site.601cf12495.png"
                   />
                 </a>
                 So far it is published only with the default treebank files that come with the template. The next steps show you had to add a new file.
@@ -12560,14 +12558,14 @@ exports[`renders the getting started page 1`] = `
                  
                 icon.
                 <a
-                  href="env.png"
+                  href="static/image/env.f124f6cf71.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt=".env file in the GitHub visual editor"
                     class="img-fluid img-thumbnail"
-                    src="env.png"
+                    src="static/image/env.f124f6cf71.png"
                   />
                 </a>
               </li>
@@ -12684,14 +12682,14 @@ exports[`renders the getting started page 1`] = `
                  
                 button.
                 <a
-                  href="upload.png"
+                  href="static/image/upload.8f833b3db5.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="arrow pointing to upload files button on GitHub"
                     class="img-fluid img-thumbnail"
-                    src="upload.png"
+                    src="static/image/upload.8f833b3db5.png"
                   />
                 </a>
               </li>
@@ -12836,14 +12834,14 @@ exports[`renders the getting started page 1`] = `
                   </li>
                 </ul>
                 <a
-                  href="mytrees-config.png"
+                  href="static/image/mytrees-config.390d223b23.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="GitHub visual editor editing src/config.json"
                     class="img-fluid img-thumbnail"
-                    src="mytrees-config.png"
+                    src="static/image/mytrees-config.390d223b23.png"
                   />
                 </a>
                 <br />
@@ -12892,14 +12890,14 @@ exports[`renders the getting started page 1`] = `
               <li>
                 After the build succeeds, you should now see your new tree publication added to the site.
                 <a
-                  href="mytrees-site.png"
+                  href="static/image/mytrees-site.3d2660c5e0.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <img
                     alt="published site with an arrow pointing to newly added section"
                     class="img-fluid img-thumbnail"
-                    src="mytrees-site.png"
+                    src="static/image/mytrees-site.3d2660c5e0.png"
                   />
                 </a>
               </li>
@@ -13068,7 +13066,7 @@ exports[`renders the main page 1`] = `
     Treebank Publication Template
   </header>
   <div
-    class="jumbotron jumbotron-fluid bg-dark jumbotronSmall"
+    class="jumbotron jumbotron-fluid bg-dark src-components-Hero-Hero-module__jumbotronSmall-Htlofx"
   >
     <div
       class="container text-light"
@@ -13084,7 +13082,7 @@ exports[`renders the main page 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -13117,7 +13115,7 @@ exports[`renders the main page 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -13196,7 +13194,7 @@ exports[`renders the main page 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-murder-of-eratosthenes-1-50/1"
@@ -13238,7 +13236,7 @@ exports[`renders the main page 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-crown-1-50/1"
@@ -13260,7 +13258,7 @@ exports[`renders the main page 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -13339,7 +13337,7 @@ exports[`renders the main page 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/histories-40-59/1"
@@ -13402,7 +13400,7 @@ exports[`renders the main page 1`] = `
                 </ul>
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/philippic-1-51/1"
@@ -13507,7 +13505,7 @@ exports[`renders the main page with markdown in the subtitle 1`] = `
     Treebank Publication Template
   </header>
   <div
-    class="jumbotron jumbotron-fluid bg-dark jumbotronSmall"
+    class="jumbotron jumbotron-fluid bg-dark src-components-Hero-Hero-module__jumbotronSmall-Htlofx"
   >
     <div
       class="container text-light"
@@ -13529,7 +13527,7 @@ exports[`renders the main page with markdown in the subtitle 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -13562,7 +13560,7 @@ exports[`renders the main page with markdown in the subtitle 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -13641,7 +13639,7 @@ exports[`renders the main page with markdown in the subtitle 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-murder-of-eratosthenes-1-50/1"
@@ -13683,7 +13681,7 @@ exports[`renders the main page with markdown in the subtitle 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/on-the-crown-1-50/1"
@@ -13705,7 +13703,7 @@ exports[`renders the main page with markdown in the subtitle 1`] = `
     </div>
   </div>
   <div
-    class="container collection"
+    class="container src-components-Collection-Collection-module__collection-NuD0_A"
   >
     <div
       class="row pb-3"
@@ -13784,7 +13782,7 @@ exports[`renders the main page with markdown in the subtitle 1`] = `
                 Vanessa Gorman
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/histories-40-59/1"
@@ -13847,7 +13845,7 @@ exports[`renders the main page with markdown in the subtitle 1`] = `
                 </ul>
               </td>
               <td
-                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right locus"
+                class="col-4 col-sm-5 col-md-2 col-lg-2 text-right src-components-Collection-Collection-module__locus-vLkr2R"
               >
                 <a
                   href="/philippic-1-51/1"
@@ -14014,7 +14012,7 @@ exports[`renders the update page 1`] = `
     </div>
   </header>
   <div
-    class="container pt-3 pb-4 instructions"
+    class="container pt-3 pb-4 src-components-Instructions-Instructions-module__instructions-zSxC0U"
   >
     <div
       class="row"
@@ -14051,14 +14049,14 @@ exports[`renders the update page 1`] = `
              
             tab.
             <a
-              href="actions.png"
+              href="static/image/actions.559fce0d5c.png"
               rel="noopener noreferrer"
               target="_blank"
             >
               <img
                 alt="GitHub repository with arrow pointing to actions tab"
                 class="img-fluid img-thumbnail"
-                src="actions.png"
+                src="static/image/actions.559fce0d5c.png"
               />
             </a>
           </li>
@@ -14071,14 +14069,14 @@ exports[`renders the update page 1`] = `
              
             workflow from the workflow list.
             <a
-              href="update.png"
+              href="static/image/update.e866e8789e.png"
               rel="noopener noreferrer"
               target="_blank"
             >
               <img
                 alt="GitHub repository action tab with arrow pointing to update action"
                 class="img-fluid img-thumbnail"
-                src="update.png"
+                src="static/image/update.e866e8789e.png"
               />
             </a>
           </li>
@@ -14097,14 +14095,14 @@ exports[`renders the update page 1`] = `
              
             button.
             <a
-              href="run-workflow.png"
+              href="static/image/run-workflow.e1defe756c.png"
               rel="noopener noreferrer"
               target="_blank"
             >
               <img
                 alt="Update workflow page with arrow pointing to the run workflow button"
                 class="img-fluid img-thumbnail"
-                src="run-workflow.png"
+                src="static/image/run-workflow.e1defe756c.png"
               />
             </a>
              

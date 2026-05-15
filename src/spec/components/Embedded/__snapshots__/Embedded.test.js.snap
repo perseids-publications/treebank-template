@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Rstest Snapshot v1
 
 exports[`renders 404 when publication not found 1`] = `
 <div>
@@ -35,13 +35,13 @@ exports[`renders an embedded alignment publication 1`] = `
 <div>
   <div>
     <div
-      class="alignmentContainer"
+      class="src-components-EmbeddedAlignment-EmbeddedAlignment-module__alignmentContainer-K_OI2F"
     >
       <div
-        class="text"
+        class="src-components-EmbeddedAlignment-EmbeddedAlignment-module__text-oZy2P0"
       >
         <div
-          class="segment"
+          class="src-components-EmbeddedAlignment-EmbeddedAlignment-module__segment-WeD5oT"
         >
           <div
             class="_2vy3L"
@@ -410,7 +410,7 @@ exports[`renders an embedded alignment publication 1`] = `
           </div>
         </div>
         <div
-          class="segment"
+          class="src-components-EmbeddedAlignment-EmbeddedAlignment-module__segment-WeD5oT"
         >
           <div
             class="_2vy3L"
@@ -916,7 +916,7 @@ exports[`renders an embedded alignment publication 1`] = `
         </div>
       </div>
       <div
-        class="links"
+        class="src-components-EmbeddedAlignment-EmbeddedAlignment-module__links-Mo0y_D"
       >
         <p>
           <a
@@ -947,10 +947,10 @@ exports[`renders an embedded publication 2`] = `
 <div>
   <div>
     <div
-      class="treebankContainer"
+      class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__treebankContainer-uEyQvt"
     >
       <div
-        class="text"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__text-Qh1RUp"
       >
         <div
           data-highlight=""
@@ -961,7 +961,7 @@ exports[`renders an embedded publication 2`] = `
         </div>
       </div>
       <div
-        class="graph"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__graph-mbH9Sk"
       >
         <div
           data-highlight=""
@@ -979,7 +979,7 @@ exports[`renders an embedded publication 2`] = `
         PartOfSpeech
       </div>
       <div
-        class="links"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__links-fxQq5g"
       >
         <p>
           <a
@@ -1000,10 +1000,10 @@ exports[`the API performs a no-op for refreshView 1`] = `
 <div>
   <div>
     <div
-      class="treebankContainer"
+      class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__treebankContainer-uEyQvt"
     >
       <div
-        class="text"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__text-Qh1RUp"
       >
         <div
           data-highlight=""
@@ -1014,7 +1014,7 @@ exports[`the API performs a no-op for refreshView 1`] = `
         </div>
       </div>
       <div
-        class="graph"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__graph-mbH9Sk"
       >
         <div
           data-highlight=""
@@ -1032,7 +1032,7 @@ exports[`the API performs a no-op for refreshView 1`] = `
         PartOfSpeech
       </div>
       <div
-        class="links"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__links-fxQq5g"
       >
         <p>
           <a
@@ -1053,10 +1053,10 @@ exports[`the API supports gotoSentence 1`] = `
 <div>
   <div>
     <div
-      class="treebankContainer"
+      class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__treebankContainer-uEyQvt"
     >
       <div
-        class="text"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__text-Qh1RUp"
       >
         <div
           data-highlight=""
@@ -1067,7 +1067,7 @@ exports[`the API supports gotoSentence 1`] = `
         </div>
       </div>
       <div
-        class="graph"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__graph-mbH9Sk"
       >
         <div
           data-highlight=""
@@ -1085,7 +1085,7 @@ exports[`the API supports gotoSentence 1`] = `
         PartOfSpeech
       </div>
       <div
-        class="links"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__links-fxQq5g"
       >
         <p>
           <a
@@ -1106,10 +1106,10 @@ exports[`the API supports gotoSentence with highlighted words 1`] = `
 <div>
   <div>
     <div
-      class="treebankContainer"
+      class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__treebankContainer-uEyQvt"
     >
       <div
-        class="text"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__text-Qh1RUp"
       >
         <div
           data-highlight="12"
@@ -1120,7 +1120,7 @@ exports[`the API supports gotoSentence with highlighted words 1`] = `
         </div>
       </div>
       <div
-        class="graph"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__graph-mbH9Sk"
       >
         <div
           data-highlight="12"
@@ -1138,7 +1138,7 @@ exports[`the API supports gotoSentence with highlighted words 1`] = `
         PartOfSpeech
       </div>
       <div
-        class="links"
+        class="src-components-EmbeddedTreebank-EmbeddedTreebank-module__links-fxQq5g"
       >
         <p>
           <a

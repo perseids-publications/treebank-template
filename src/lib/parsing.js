@@ -4,7 +4,7 @@
 const getLang = (treebank) => {
   try {
     return treebank.$['xml:lang'];
-  } catch {
+  } catch (_e) {
     return '';
   }
 };
@@ -12,7 +12,7 @@ const getLang = (treebank) => {
 const getForm = (word) => {
   try {
     return word.$.form;
-  } catch {
+  } catch (_e) {
     return '';
   }
 };
@@ -20,7 +20,7 @@ const getForm = (word) => {
 const getLemma = (word) => {
   try {
     return word.$.lemma;
-  } catch {
+  } catch (_e) {
     return '';
   }
 };
@@ -30,7 +30,7 @@ const getSentence = (treebank, sentenceId) => {
     return treebank.sentence.find(
       ({ $: { id } }) => id === sentenceId,
     );
-  } catch {
+  } catch (_e) {
     return {};
   }
 };
@@ -143,7 +143,7 @@ const alpheiosAnnotation = ({
     const deconstructed = configuration.deconstructPostag(word.$.postag);
 
     return convertPostag({ deconstructed, treebank: treebank.treebank, word });
-  } catch {
+  } catch (_e) {
     return {};
   }
 };
@@ -207,7 +207,7 @@ const alpheiosFindWord = ({
     }
 
     return ids;
-  } catch {
+  } catch (_e) {
     return [];
   }
 };

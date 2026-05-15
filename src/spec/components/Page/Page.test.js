@@ -10,7 +10,7 @@ import alignments from '../../alignments.test.json';
 
 import Page from '../../../components/Page';
 
-jest.mock('treebank-react');
+rstest.mock('treebank-react');
 
 const server = setupServer(
   rest.get(`${process.env.PUBLIC_URL}/xml/lysias-1-1-50.xml`, (req, res, ctx) => (
